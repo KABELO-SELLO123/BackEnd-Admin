@@ -1,0 +1,123 @@
+                <!-- full page content (main container) -->
+                <div class="content-body">
+                    <!-- secondary container-->
+                    <div class="container pd-x-0">
+                
+                        <!-- dashBoard/Fee structured (inside SC)-->
+                        <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
+                            <div>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                                        <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
+                                        <li class="breadcrumb-item">Transaction</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Pending Bank Payments</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                        <!--dashBoard/Fee structured-->
+                
+                        <div class="content ht-100v pd-0">
+                            <div class="col-lg-12 col-xl-8 mg-t-10" style="width: 100%;">
+                                <div class="card mg-b-10">
+                
+
+                                    <fieldset class="form-fieldset"> <!--fieldset container-->
+                                        <form class="form-fieldset">
+                                            <div>
+                                                <div class="form-group">
+                                                    <label for="startDate"><strong>Date From</strong></label>
+                                                    <input type="date" class="form-control" id="startDate">
+                                                </div>
+            
+                                                <div>
+                                                    <label for="endDate"><strong>Date To</strong></label>
+                                                    <input type="date" class="form-control" id="endDate">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a class="btn btn-warning btn-sm mt-3" href="">Clear</a>
+                                                <a class="btn btn-success btn-sm mt-3" href="">Search</a>
+                                            </div>
+                                        </form>
+                                    </fieldset> <!--fieldset container-->
+
+
+                                    <!--fieldset container-->
+                                    <fieldset class="form-fieldset">
+                                        <!--fieldset legend-->
+                                        <legend>Transaction List</legend>
+                                        <!--fieldset legend-->
+                
+                                        <!-- button CSV(those will come from the datatable) -->
+                                        <div
+                                            class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 mg-b-5">
+                                            <div class="d-flex justify-content-start pl-4 mg-t-20">
+                                                <div class="flex-fill">
+                                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Print</button>
+                                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Excel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- button CSV(those will come from the datatable) -->
+                
+                                        <!--tableContainer-->
+                                        <div class="table-responsive">
+                                            <table class="table table-dashboard mg-b-0">
+                
+                                                <table class="table table-hover table-dashboard mg-b-0 ">
+                                                    <thead style="background-color: rgba(244, 244, 244, 0.632);">
+                                                        <tr>
+                                                            <th scope="col">Action</th>
+                                                            <th scope="col">TransactionID</th>
+                                                            <th scope="col">created date</th>
+                                                            <th scope="col">processed by</th>
+                                                            <th scope="col">cashPickup code</th>
+                                                            <th scope="col">user type</th>
+                                                            <th scope="col">mode of payment</th>
+                                                            <th scope="col">Agent name</th>
+                                                            <th scope="col">payer name</th>
+                                                            <th scope="col">provider name</th>
+                                                            <th scope="col">username</th>
+                                                            <th scope="col">sender name</th>
+                                                            <th scope="col">sender surname</th>
+                                                            <th scope="col">sender email</th>
+                                                            <th scope="col">sender date of birth</th>
+                                                            <th scope="col">sender ID number</th>
+                                                            <th scope="col">sent amount</th>
+                                                            <th scope="col">sent currency</th>
+                                                            <th scope="col">destination amount</th>
+                                                            <th scope="col">destination currency</th>
+                                                            <th scope="col">status</th>
+                                                            <th scope="col">fee</th>
+                                                            <th scope="col">service</th>
+                                                            <th scope="col">purpose</th>
+                                                            <th scope="col">relationship</th>
+                                                            <th scope="col">beneficiary name</th>
+                                                            <th scope="col">beneficiary surname</th>
+                                                            <th scope="col">beneficiary cellphone</th>
+                                                            <th scope="col">beneficiary email</th>
+                                                            <th scope="col">beneficiary date of birth</th>
+                                                            <th scope="col">beneficiary ID number</th>
+                                                            <th scope="col">beneficiary country</th>
+                                                            <th scope="col">beneficiary account number</th>
+                                                            <th scope="col">IBAN</th>
+                                                            <th scope="col">BIC</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div><!--tableContainer-->
+                                        
+                                    </fieldset>
+                
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div><!-- secondary container-->
+                </div><!-- full page content -->

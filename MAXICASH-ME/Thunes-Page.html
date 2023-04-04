@@ -1,0 +1,516 @@
+                <!-- full page content (main container) -->
+                <div class="content-body">
+                    <!-- secondary container-->
+                    <div class="container pd-x-0">
+                
+                        <!-- dashBoard/Fee structured (inside SC)-->
+                        <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
+                            <div>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                                        <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
+                                        <li class="breadcrumb-item">Transaction</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Pending Bank Payments</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                        <!--dashBoard/Fee structured-->
+                
+                        <div class="content ht-100v pd-0">
+                            <div class="col-lg-12 col-xl-8 mg-t-10" style="width: 100%;">
+                                <div class="card mg-b-10">
+                
+                                    <!--fieldset container-->
+                                    <fieldset class="form-fieldset">
+                
+                                        <!--fieldset legend-->
+                                        <legend>List of Payers Per Country</legend>
+                                        <!--fieldset legend-->
+                                        
+                                        <div>
+                                            <button href="#addCountry" data-bs-toggle="modal"
+                                              class="btn  tx-l btn-sm btn-primary btn-uppercase pd-x-15 "><i data-feather="plus"></i> Create
+                                              Country</button>
+                                            <button href="#editCountry" data-bs-toggle="modal"
+                                              class="btn  tx-l btn-sm btn-danger btn-uppercase pd-x-15 "><i data-feather="edit"></i> Edit
+                                              Country</button>
+                                          </div>
+                                        <!-- button CSV(those will come from the datatable) -->
+                                        <div
+                                            class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 mg-b-5">
+                                            <div class="d-flex justify-content-start pl-4 mg-t-20">
+                                                <div class="flex-fill">
+                                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Copy</button>
+                                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Print</button>
+                                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Excel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- button CSV(those will come from the datatable) -->
+                
+                                        <!--tableContainer-->
+                                        <div class="table-responsive">
+                                            <table class="table table-dashboard mg-b-0">
+                
+                                                <table class="table table-hover table-dashboard mg-b-0 ">
+                                                    <thead style="background-color: rgba(244, 244, 244, 0.632);">
+                                                        <tr>
+                                                            <th scope="col">transactionID</th>
+                                                            <th scope="col">Merchant Name</th>
+                                                            <th scope="col">Status</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Andorra</td>
+                                                            <td>AND</td>
+                                                            <td>false</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Australia</td>
+                                                            <td>AUS</td>
+                                                            <td>false</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Austria</td>
+                                                            <td>AUT</td>
+                                                            <td>false</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Belgium</td>
+                                                            <td>BEL</td>
+                                                            <td>false</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Benin</td>
+                                                            <td>BEN</td>
+                                                            <td>false</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Botswana</td>
+                                                            <td>BWA</td>
+                                                            <td>false</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Brazil</td>
+                                                            <td>BRA</td>
+                                                            <td>false</td>
+                                                          </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div><!--tableContainer-->
+                                    </fieldset>
+                                                        <!--fieldset container-->
+                    <fieldset class="form-fieldset">
+
+                        <button href="#addPayer" data-bs-toggle="modal" class="btn tx-center btn-sm btn-primary"><i
+                            data-feather="plus" class="mg-r-5"></i>Create Payer</button>
+      
+                      </div>
+                        <!-- button CSV(those will come from the datatable) -->
+                        <div
+                            class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 mg-b-5">
+                            <div class="d-flex justify-content-start pl-4 mg-t-20">
+                                <div class="flex-fill">
+                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Print</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Excel</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button CSV(those will come from the datatable) -->
+
+                        <!--tableContainer-->
+                        <div class="table-responsive">
+                            <table class="table table-dashboard mg-b-0">
+
+                                <table class="table table-hover table-dashboard mg-b-0 ">
+                                    <thead style="background-color: rgba(244, 244, 244, 0.632);">
+                                        <tr>
+                                            <th scope="col">transactionID</th>
+                                            <th scope="col">Merchant Name</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Transaction Date</th>
+                                            <th scope="col">Card Number</th>
+                                            <th scope="col">Merchant Reference</th>
+                                            <th scope="col">Amount To Recharge</th>
+                                            <th scope="col">Amount To Deduct</th>
+                                            <th scope="col">Fee</th>
+                                            <th scope="col">User Email</th>
+                                            <th scope="col">Trans Text</th>
+                                            <th scope="col">Gateway Reference</th>
+                                            <th scope="col">App Name</th>
+                                            <th scope="col">Customer Name</th>
+                                            <th scope="col">Customer Email</th>
+                                            <th scope="col">Download</th>
+                                            <th scope="col">Merchant Post Status</th>
+                                          </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </div><!--tableContainer-->
+                        
+                    </fieldset>
+
+                
+                                </div>
+                            </div>
+                        </div>
+                
+                         <!--topUp add country-->
+
+  <div class="modal fade" id="addCountry" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+      <div class="modal-content">
+        <div class="modal-body ">
+          <a href="#" role="button" class="close pos-absolute t-15 r-15" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </a>
+
+
+          <p class="tx-center tx-uppercase  tx-color-03 tx-spacing-3">Country Details</p>
+
+          <div class="card-body">
+            <div class="rounded p-2">
+              <label class="mb-2 tx-color-03  ">Country Name</label>
+              <div class="form-group">
+                <input type="text" class="form-control  form-group-sm " placeholder="Provider Name"
+                  aria-label="Card number">
+              </div>
+              <label class="mb-2 tx-color-03 mt-3  ">ISO Code</label>
+              <div class="form-group">
+                <input type="text" class="form-control   " placeholder="Integration Code" aria-label="Card number">
+              </div>
+
+
+              <label for="enableCountry">
+                <input id="enableCountry" type="checkbox" required name="enableCountry" class="inline" /> Enable
+                Country</a>
+              </label>
+
+              <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
+                <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15"><i data-feather="x"
+                    class="mg-r-5"></i> Close</button>
+                <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i
+                    data-feather="save" class="mg-r-5"></i> Save</button>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- TopUp addcountry -->
+
+   <!-- TopUp editcountry -->
+
+   <div class="modal fade" id="editCountry" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+      <div class="modal-content">
+        <div class="modal-body ">
+          <a href="#" role="button" class="close pos-absolute t-15 r-15" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </a>
+
+
+          <p class="tx-center tx-uppercase  tx-color-03 tx-spacing-3">Message</p>
+
+          <div class="card-body">
+            <div class="rounded p-2">
+
+
+
+
+              <label for="enableDisableCountry">
+                <input id="enableDisableCountry" type="checkbox" required name="enableDisableCountry" class="inline" />
+                Enable/Disable Country</a>
+              </label>
+
+              <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
+                <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15"><i data-feather="x"
+                    class="mg-r-5"></i> Close</button>
+                <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i
+                    data-feather="save" class="mg-r-5"></i> Save</button>
+                <button class="btn tx-center btn-sm btn-light btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i
+                    data-feather="" class="mg-r-5"></i> Cancel</button>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- TopUp editcountry -->
+
+  <!--topUp add new player-->
+
+  <div class="modal fade modal-xl " id="addPayer" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+      <div class="modal-content ">
+        <div class="modal-body">
+          <a href="#" role="button" class="close pos-absolute t-15 r-15" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </a>
+
+
+          <p class="tx-center tx-uppercase tx-color-03 tx-spacing-3">Create Payer </p>
+
+          <div class="card-body ">
+
+
+            <div class="row">
+
+              <div class="col-6">
+
+                <div class="rounded p-2">
+                  <label class="mb-2 tx-color-03  ">Payer ID</label>
+                  <div class="form-group">
+                    <input type="text" class="form-control  form-group-sm " placeholder="Payer ID"
+                      aria-label="Card number">
+                  </div>
+                  <label class="mb-2 tx-color-03   ">Payer Name</label>
+                  <div class="form-group">
+                    <input type="text" class="form-control   " placeholder="Payer Name" aria-label="Card number">
+                  </div>
+                  <label class="mb-2 tx-color-03   ">Country of Service Provider</label>
+                  <div class="form-group">
+                    <select name="" id="" class="form-control">
+                      <option value="">Select Country</option>
+                      <option value="">Belguim</option>
+                      <option value="">Belize</option>
+                    </select>
+                  </div>
+                  <label class="mb-2 tx-color-03   ">Currency</label>
+                  <div class="form-group">
+                    <input type="text" class="form-control   " placeholder="Currency" aria-label="Card number">
+                  </div>
+                  <label class="mb-2 tx-color-03   ">Amount Accepted</label>
+                  <div class="form-group">
+                    <select name="" id="" class="form-control">
+                      <option value="">Select...</option>
+                      <option value="">Mobile Wallets</option>
+                      <option value="">Bank Account</option>
+                      <option value="">Cash Pick Up</option>
+                    </select>
+                  </div>
+
+                  <label class="mb-2 tx-color-03   ">Service Provider Type</label>
+                  <div class="form-group">
+                    <select name="" id="" class="form-control">
+                      <option value="">Select...</option>
+                      <option value="">Cents</option>
+                      <option value="">Whole Amounts</option>
+                      <option value="">Multiple of 5</option>
+                      <option value="">Multiple of 10</option>
+                    </select>
+                  </div>
+                  <label class="mb-2 tx-color-03   ">Transaction Type</label>
+                  <div class="form-group">
+                    <select name="" id="" class="form-control">
+                      <option value="">Select...</option>
+                      <option value="">Customer To Customer</option>
+                      <option value="">Customer To Business</option>
+                      <option value="">Business To Customer</option>
+                      <option value="">Business To Business</option>
+                      <option value="">Debit</option>
+                      <option value="">Credit</option>
+                    </select>
+                  </div>
+                  <label class="mb-2 tx-color-03   ">Email Instruction</label>
+                  <div class="form-group">
+                    <input type="text" class="form-control   " placeholder="Email Instruction" aria-label="Card number">
+                  </div>
+                  <label class="mb-2 tx-color-03   ">Provider</label>
+                  <div class="form-group">
+                    <select name="" id="" class="form-control">
+                      <option value="">Select...</option>
+                      <option value="">Thunes</option>
+                      <option value="">MaxiCash</option>
+                      <option value="">EziPay</option>
+                      <option value="">Unipesa</option>
+                      <option value="">Mpesa</option>
+                      <option value="">Orange Money</option>
+                      <option value="">Airtel Money</option>
+                    </select>
+                  </div>
+                  <label class="mb-2 tx-color-03   ">EziPay Country Code</label>
+                  <div class="form-group">
+                    <input type="date" class="form-control   " placeholder="EziPay Country Code"
+                      aria-label="Card number">
+                  </div>
+                  <label class="mb-2 tx-color-03   ">EziPay Service</label>
+                  <div class="form-group">
+                    <select name="" id="" class="form-control">
+                      <option value="">Select...</option>
+                      <option value="">MOBILE MONEY FR</option>
+                      <option value="">MOBILE MONEY GH</option>
+                      <option value="">MOBILE MONEY SL</option>
+                    </select>
+                  </div>
+                  <label for="">
+                    <input id="" type="checkbox" required name="" class="inline" />
+                    Processed Internally</a>
+                  </label>
+                  <label for="">
+                    <input id="" type="checkbox" required name="" class="inline" />
+                    Enable Payer</a>
+                  </label>
+                  <label for="">
+                    <input id="" type="checkbox" required name="" class="inline" />
+                    Enable Occupation</a>
+                  </label>
+                  <label for="">
+                    <input id="" type="checkbox" required name="" class="inline" />
+                    Enable Email Instruction</a>
+                  </label>
+
+
+
+                </div>
+
+              </div>
+
+              <div class="col-6">
+
+                <div class="rounded p-2">
+                  <label class="mb-2 tx-color-03  ">Phone Code</label>
+                  <div class="form-group">
+                    <input type="text" class="form-control  form-group-sm " placeholder="Phone Code"
+                      aria-label="Card number">
+                  </div>
+                  <label class="mb-2 tx-color-03   ">Percentage Fee (%)</label>
+                  <div class="form-group">
+                    <select name="" id="" class="form-control">
+                      <option value="">1%</option>
+                      <option value="">2%</option>
+                      <option value="">3%</option>
+                      <option value="">4%</option>
+                      <option value="">5%</option>
+                      <option value="">6%</option>
+                      <option value="">7%</option>
+                      <option value="">8%</option>
+                      <option value="">9%</option>
+                      <option value="">10%</option>
+                    </select>
+                  </div>
+                  <label class="mb-2 tx-color-03   ">Fee Type</label>
+                  <div class="form-group">
+                    <select name="" id="" class="form-control">
+                      <option value="">Percentage</option>
+                    </select>
+                  </div>
+                  <label class="mb-2 tx-color-03  ">Fixed Fee</label>
+                  <div class="form-group">
+                    <input type="text" class="form-control  form-group-sm " placeholder="Fixed Fee"
+                      aria-label="Card number">
+                  </div>
+                  <label class="mb-2 tx-color-03  ">Minimum Transaction Fee</label>
+                  <div class="form-group">
+                    <input type="text" class="form-control  form-group-sm " placeholder="Transaction Fee"
+                      aria-label="Card number">
+                  </div>
+                  <label class="mb-2 tx-color-03  ">Minimum Transaction Amount</label>
+                  <div class="form-group">
+                    <input type="text" class="form-control  form-group-sm " placeholder="Minimum Amount"
+                      aria-label="Card number">
+                  </div>
+                  <label class="mb-2 tx-color-03  ">Maximum Transaction Amount</label>
+                  <div class="form-group">
+                    <input type="text" class="form-control  form-group-sm " placeholder="Maximum  Amount"
+                      aria-label="Card number">
+                  </div>
+                  <label class="mb-2 tx-color-03  ">Transaction Processing Time</label>
+                  <div class="form-group">
+                    <input type="text" class="form-control  form-group-sm " placeholder="Payment Speed"
+                      aria-label="Card number">
+                  </div>
+                  <label class="mb-2 tx-color-03   ">Agent Commission</label>
+                  <div class="form-group">
+                    <select name="" id="" class="form-control">
+                      <option value="">1%</option>
+                      <option value="">2%</option>
+                      <option value="">3%</option>
+                      <option value="">4%</option>
+                      <option value="">5%</option>
+                      <option value="">6%</option>
+                      <option value="">7%</option>
+                      <option value="">8%</option>
+                      <option value="">9%</option>
+                      <option value="">10%</option>
+                    </select>
+                  </div>
+                  <label class="mb-2 tx-color-03  ">Minimum Agent Commission</label>
+                  <div class="form-group">
+                    <input type="text" class="form-control  form-group-sm " placeholder="Payment Speed"
+                      aria-label="Card number">
+                  </div>
+                  <label for="">
+                    <input id="" type="checkbox" required name="" class="inline" />
+                    Enable IBAN</a>
+                  </label>
+                  <label for="">
+                    <input id="" type="checkbox" required name="" class="inline" />
+                    Enable BIC</a>
+                  </label>
+                  <label for="">
+                    <input id="" type="checkbox" required name="" class="inline" />
+                    Enable Branch Number</a>
+                  </label>
+                  <label for="">
+                    <input id="" type="checkbox" required name="" class="inline" />
+                    Enable Account Type</a>
+                  </label><label for="">
+                    <input id="" type="checkbox" required name="" class="inline" />
+                    Enable Sort Code</a>
+                  </label>
+                  <label for="">
+                    <input id="" type="checkbox" required name="" class="inline" />
+                    Enable IFS Code</a>
+                  </label>
+                  <label for="">
+                    <input id="" type="checkbox" required name="" class="inline" />
+                    Enable Beneficiary relationship</a>
+                  </label>
+
+
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
+              <button class="btn tx-center btn-sm btn-primary pd-x-15"><i data-feather="save" class="mg-r-5"></i>
+                Save</button>
+
+              <button class="btn tx-center btn-sm btn-light pd-x-15"><i data-feather="save" class="mg-r-5"></i>
+                Close</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div><!-- modal-body -->
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+  <!--topUp add new player-->
+
+                    </div><!-- secondary container-->
+                </div><!-- full page content -->

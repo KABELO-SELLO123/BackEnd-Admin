@@ -1,0 +1,131 @@
+                <!-- full page content (main container) -->
+                <div class="content-body">
+                    <!-- secondary container-->
+                    <div class="container pd-x-0">
+
+                        <!-- dashBoard/Fee structured (inside SC)-->
+                        <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
+                            <div>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                                        <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
+                                        <li class="breadcrumb-item">Transaction</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Pending Bank Payments
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                        <!--dashBoard/Fee structured-->
+
+                        <div class="content ht-100v pd-0">
+                            <div class="col-lg-12 col-xl-8 mg-t-10" style="width: 100%;">
+                                <div class="card mg-b-10">
+
+                                    <!--fieldset container-->
+                                    <fieldset class="form-fieldset">
+                                        <form class="form-fieldset">
+                                            <div class="form-row">
+                                              <div>
+                                                <label><strong>Search By</strong></label>
+                                                <select class="form-select">
+                                                  <option>(Select a search field)</option>
+                                                  <option>transactionID</option>
+                                                  <option>Merchant Reference</option>
+                                                  <option>Gateway Reference</option>
+                                                  <option>Merchant Name</option>
+                                                  <option>Customer Name</option>
+                                                  <option>Customer Email</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                            
+                                            <div>
+                                              <label for="inputAddress"><strong>Value</strong></label>
+                                              <input type="text" class="form-control" id="inputAddress" placeholder="Type here...">
+                                            </div>
+                            
+                            
+                                            <div>
+                                              <div class="form-group">
+                                                <label for="startDate"><strong>Date From</strong></label>
+                                                <input type="date" class="form-control" id="startDate">
+                                              </div>
+                            
+                                              <div>
+                                                <label for="endDate"><strong>Date To</strong></label>
+                                                <input type="date" class="form-control" id="endDate">
+                                              </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end">
+                                              <a class="btn btn-warning btn-sm mt-3" href="">Clear</a>
+                                              <a class="btn btn-success btn-sm ms-1 mt-3" href="">Search</a>
+                                            </div>
+                                          </form>
+                                    </fieldset>
+
+                                    <!--fieldset container-->
+                                    <fieldset class="form-fieldset">
+                                        <!--fieldset legend-->
+                                        <legend>MaxiCash Me Orders List</legend>
+                                        <!--fieldset legend-->
+
+                                        <!-- button CSV(those will come from the datatable) -->
+                                        <div
+                                            class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 mg-b-5">
+                                            <div class="d-flex justify-content-start pl-4 mg-t-20">
+                                                <div class="flex-fill">
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary btn-xs ">Copy</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary btn-xs ">Print</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary btn-xs ">Excel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- button CSV(those will come from the datatable) -->
+
+                                        <!--tableContainer-->
+                                        <div class="table-responsive">
+                                            <table class="table table-dashboard mg-b-0">
+
+                                                <table class="table table-hover table-dashboard mg-b-0 ">
+                                                    <thead style="background-color: rgba(244, 244, 244, 0.632);">
+                                                        <tr>
+                                                            <th scope="col">transactionID</th>
+                                                            <th scope="col">Merchant Name</th>
+                                                            <th scope="col">Status</th>
+                                                            <th scope="col">Transaction Date</th>
+                                                            <th scope="col">Card Number</th>
+                                                            <th scope="col">Merchant Reference</th>
+                                                            <th scope="col">Amount To Recharge</th>
+                                                            <th scope="col">Amount To Deduct</th>
+                                                            <th scope="col">Fee</th>
+                                                            <th scope="col">User Email</th>
+                                                            <th scope="col">Trans Text</th>
+                                                            <th scope="col">Gateway Reference</th>
+                                                            <th scope="col">App Name</th>
+                                                            <th scope="col">Customer Name</th>
+                                                            <th scope="col">Customer Email</th>
+                                                            <th scope="col">Download</th>
+                                                            <th scope="col">Merchant Post Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <!--tableContainer-->
+
+                                    </fieldset>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- secondary container-->
+                </div><!-- full page content -->
