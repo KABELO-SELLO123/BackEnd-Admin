@@ -72,6 +72,8 @@ $(document).ready(function(){
 
   });
 
+
+  //---- Start GPT ----
   
   $("#cardbalance").click(function(){
     
@@ -90,6 +92,28 @@ $(document).ready(function(){
     $("#PageLoadHere").load("GTP/gtp-card-history.html");
     
   });
+
+  $("#cardReversal").click(function(){
+    
+    $("#PageLoadHere").load("GTP/gtp-card-reversal.html");
+    
+  });
+
+  $("#cardtocard").click(function(){
+    
+    $("#PageLoadHere").load("GTP/gtp-card-to-card.html");
+    
+  });
+
+
+  $("#cardReload").click(function(){
+    
+    $("#PageLoadHere").load("GTP/gtp-card-reload.html");
+    
+  });
+
+
+  //---- End GTP -----
 
 
 });
