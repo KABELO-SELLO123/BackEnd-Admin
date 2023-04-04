@@ -75,13 +75,19 @@ $(document).ready(function(){
   
   $("#cardbalance").click(function(){
     
-    $("#PageLoadHere").load("CASH-MANAGEMENT/Account-balance.html");
+    $("#PageLoadHere").load("GTP/gtp-card-balance.html");
     
   });
 
   $("#CardCustomer").click(function(){
     
-    $("#PageLoadHere").load("CASH-MANAGEMENT/Account-types.html");
+    $("#PageLoadHere").load("GTP/gtp-card-customer.html");
+    
+  });
+
+  $("#cardhistory").click(function(){
+    
+    $("#PageLoadHere").load("GTP/gtp-card-history.html");
     
   });
 
