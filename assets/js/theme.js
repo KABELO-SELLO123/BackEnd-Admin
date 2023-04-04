@@ -73,7 +73,7 @@ $(document).ready(function(){
   });
 
 
-  //---- Start GPT ----
+  //---- Start GTP ----
   
   $("#cardbalance").click(function(){
     
