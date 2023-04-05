@@ -164,6 +164,7 @@ $(document).ready(function(){
   });
   //--End Transactions--
 
+<<<<<<< HEAD
   //--MaxiCash--
 }); $("#Transaction").click(function(){
     
@@ -226,3 +227,115 @@ $("#MaxiCashMe").click(function(){
     
   });
   //--End Merchants --
+=======
+
+
+  //---- Start Management -----
+
+
+  $("#userProfiles").click(function(){
+    
+    $("#PageLoadHere").load("MANAGEMENT/user-profiles.html");
+    
+  });
+
+  $("#last50RegisteredUsers").click(function(){
+    
+    $("#PageLoadHere").load("MANAGEMENT/last-50-registerd-users.html");
+    
+  });
+
+
+  $("#MaxiCashUserList").click(function(){
+    
+    $("#PageLoadHere").load("MANAGEMENT/maxicash-user-list.html");
+    
+  });
+
+  
+  $("#last50Transactions").click(function(){
+    
+    $("#PageLoadHere").load("MANAGEMENT/last-50-transaction.html");
+    
+  });
+
+  $("#BirthdayList").click(function(){
+    
+    $("#PageLoadHere").load("MANAGEMENT/birthday-list.html");
+    
+  });
+
+  $("#last50AirtimeSales").click(function(){
+    
+    $("#PageLoadHere").load("MANAGEMENT/last-50-airtime-sales.html");
+    
+  });
+
+
+  //---- End Management -----
+
+
+
+
+
+   //---- Start Cash Management -----
+
+
+
+   $("#AccountType").click(function(){
+    
+    $("#PageLoadHere").load("CASH-MANAGEMENT/Account-types.html");
+    
+  });
+
+
+  $("#Accounts").click(function(){
+    
+    $("#PageLoadHere").load("CASH-MANAGEMENT/Accounts.html");
+    
+  });
+
+
+  $("#Service").click(function(){
+    
+    $("#PageLoadHere").load("CASH-MANAGEMENT/service.html");
+    
+  });
+
+
+
+  $("#TransactionHistory").click(function(){
+    
+    $("#PageLoadHere").load("CASH-MANAGEMENT/transaction-history.html");
+    
+  });
+
+
+  
+  $("#EndOfDay").click(function(){
+    
+    $("#PageLoadHere").load("CASH-MANAGEMENT/end-of-day.html");
+    
+  });
+
+
+
+  $("#AccountsBalances").click(function(){
+    
+    $("#PageLoadHere").load("CASH-MANAGEMENT/Account-balance.html");
+    
+  });
+
+
+
+
+
+
+    //---- End Cash Management -----
+
+
+  
+
+
+});
+>>>>>>> 9578ed576978a6df266497fa8a92c6bc68cb6ef6
