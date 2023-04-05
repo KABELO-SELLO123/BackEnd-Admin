@@ -119,14 +119,14 @@
           <li class="nav-item with-sub">
             <a href="" class="nav-link "><i data-feather="dollar-sign"></i> <span class="mt-2">Cash Management</span></a>
             <ul class="mt-2">
-              <li><a href="../CASH MANAGEMENT/Account-types.html">Account Type</a></li>
-              <li><a href="../CASH MANAGEMENT/Accounts.html">Acounts</a></li>
-              <li><a href="../CASH MANAGEMENT/service.html">Service</a></li>
-              <li><a href="../CASH MANAGEMENT/transaction-log.html">Transaction Log</a></li>
-              <li><a href="../CASH MANAGEMENT/transaction-history.html">Transaction History</a></li>
-              <li><a href="../CASH MANAGEMENT/end-of-day.html">End Of Day</a></li>
-              <li><a href="../CASH MANAGEMENT/taux-de-change.html">Taux De Change</a></li>
-              <li><a href="../CASH MANAGEMENT/Account-balance.html">Accounts Balances</a></li>
+              <li><a   id="AccountType">Account Type</a></li>
+              <li><a id="Accounts">Accounts</a></li>
+              <li><a id="Service">Service</a></li>
+              <li><a href="#transLog" data-bs-toggle="modal">Transaction Log</a></li>
+              <li><a id="TransactionHistory">Transaction History</a></li>
+              <li><a id="EndOfDay">End Of Day</a></li>
+              <li><a href="#tauxdechange" data-bs-toggle="modal">Taux De Change</a></li>
+              <li><a  id="#AccountsBalances" >Accounts Balances</a></li>
             </ul>
           </li>
           <li class="nav-item with-sub">
@@ -142,12 +142,12 @@
           <li class="nav-item with-sub">
             <a href="" class="nav-link "><i data-feather="tool"></i> <span class="mt-2">Management</span></a>
             <ul class="mt-2">
-              <li><a href="../MANAGEMENT/user-profiles.html">User Profiles</a></li>
-              <li><a href="../MANAGEMENT/user-profiles.html">Last 50 Registered Users</a></li>
-              <li><a href="../MANAGEMENT/last-50-transaction.html">Last 50 Transactions</a></li>
-              <li><a href="../MANAGEMENT/last-50-airtime-sales.html">Last 50 Airtime Sales</a></li>
-              <li><a href="../MANAGEMENT/birthday-list.html">Birthday List</a></li>
-              <li><a href="../MANAGEMENT/maxicash-user-list.html">MaxiCash User List</a></li>
+              <li><a id="userProfiles">User Profiles</a></li>
+              <li><a id="last50RegisteredUsers">Last 50 Registered Users</a></li>
+              <li><a id="last50Transactions">Last 50 Transactions</a></li>
+              <li><a  id="last50AirtimeSales" >Last 50 Airtime Sales</a></li>
+              <li><a id="BirthdayList">Birthday List</a></li>
+              <li><a id="MaxiCashUserList" >MaxiCash User List</a></li>
               
             </ul>
           </li>
@@ -263,19 +263,122 @@
           <a href="" class="nav-link"><i data-feather="align-left"></i></a>
         </nav>
       </div>
-      <!-- content-header -->
+      
+
 
       <!-- Page Content -->
-
- 
- 
-      
 
       <div id="PageLoadHere">
 
             
 
       </div>
+
+      <!-- Page Content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Transaction Log -->
+
+      
+      <div class="modal fade" id="transLog" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered " role="document">
+          <div class="modal-content">
+            <div class="modal-body ">
+              <a href="#" role="button" class="close pos-absolute t-15 r-15" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </a>
+  
+              
+                <p class="tx-center tx-uppercase  tx-color-03 tx-spacing-3">Login To Account</p>
+                
+                <div class="card-body">
+
+                  <div  class="rounded p-2"> 
+                    <label class="mb-2 tx-color-03  ">Account Name</label>
+                    <div class="form-group">
+                      <select name="" id="" class="form-control">
+                        <option value="">Choose Here</option>
+                       </select>
+                    </div>
+                       
+                    
+                  </div>
+                      
+                   
+                    </div> 
+                    
+                  </div>
+                
+              </div>
+            </div><!-- modal-body -->
+      
+          </div><!-- modal-content -->
+
+
+
+      <!-- End Transaction Log -->
+
+
+
+      <!-- Taux De Change -->
+
+      <div class="modal fade" id="tauxdechange" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered " role="document">
+          <div class="modal-content">
+            <div class="modal-body ">
+              <a href="#" role="button" class="close pos-absolute t-15 r-15" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </a>
+  
+              
+                <p class="tx-center tx-uppercase  tx-color-03 tx-spacing-3">Taux De Change </p>
+                
+                <div class="card-body">
+
+                  <div  class="rounded p-2"> 
+                    <label class="mb-2 tx-color-03  ">Taux De Change (USD to CDF)</label>
+                    <div class="form-group">
+                      <input type="text" class="form-control  form-group-sm "  placeholder="Taux De Change" aria-label="Card number">
+                    </div>
+                    
+                    
+                
+                   
+                    
+                    <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
+                      <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15"><i data-feather="x" class="mg-r-5"></i> Close</button>
+                      <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i data-feather="save" class="mg-r-5"></i> Save</button>
+                      
+                    </div>
+                    
+                  </div>
+                      
+                
+                    
+                    
+                   
+                    </div> 
+                    
+                  </div>
+                
+              </div>
+            </div><!-- modal-body -->
+          </div><!-- modal-content -->
+
+
+
+      <!-- End Taux De Change -->
 
       
       <footer class="footer fixed-bottom">
@@ -290,7 +393,7 @@
 
   </div>
 
-      <!-- Page Content -->
+      
 
 
     
