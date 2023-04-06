@@ -256,6 +256,44 @@ $(document).ready(function(){
 
 
 
+    //---- Start Users  -----
+
+
+    $("#createUserAccount").click(function(){
+    
+      $("#PageLoadHere").load("USERS/create-user-account.html");
+      
+    });
+
+    
+    $("#UploadBulkUsers").click(function(){
+    
+      $("#PageLoadHere").load("USERS/upload-bulk-users.html");
+      
+    });
+
+
+
+
+    //---- End Users -----
+
+     //----Start Payments -----
+
+     $("#uploadBulkPayments").click(function(){
+    
+      $("#PageLoadHere").load("PAYMENTS/Upload-Bulk-Payment.html");
+      
+    });
+
+
+
+     //----End Payments -----
+
+
+
+
+
+
     
 
 
