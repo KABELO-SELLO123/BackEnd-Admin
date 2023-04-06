@@ -2,7 +2,7 @@
     <!-- Page holder -->
 
     <div class="content ht-100v pd-0">
-      
+     
 
       <div class="content-body">
         <div class="container pd-x-0 ">
@@ -11,8 +11,8 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                   <li class="breadcrumb-item"><a href="../fe-flow.html">Dashboard</a></li>
-                  <li class="breadcrumb-item " aria-current="page">Cash Management</li>
-                  <li class="breadcrumb-item active " aria-current="page">Accounts</li>
+                  <li class="breadcrumb-item " aria-current="page">pos</li>
+                  <li class="breadcrumb-item active " aria-current="page">pos device</li>
                 </ol>
               </nav>
             </div>
@@ -20,11 +20,10 @@
 
           <!-- Main Content -->
 
-          
           <div class="col-lg-12 col-xl-12 mg-t-10 ">
               
             <div class="card mg-b-10 ">
-              <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Acoounts</p>
+              <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Pos Device</p>
 
               <!-- Files -->
               <div class="row row-xs">
@@ -34,7 +33,7 @@
                     <div class="card">
 
                       <div class=" mg-t-20 mg-md-t-0 mb-3 mt-3 justify-content-center tx-center">
-                        <a href="#addType" data-bs-toggle="modal"  class="btn  tx-l btn-sm btn-primary btn-uppercase pd-x-15 "><i data-feather="plus" class="mg-r-5"></i> Create Account</a> 
+                        <a href="#addType" data-bs-toggle="modal"  class="btn  tx-l btn-sm btn-primary btn-uppercase pd-x-15 "><i data-feather="plus" class="mg-r-5"></i>Capture Device</a> 
                       </div>
                         <div class="card-body">
                             
@@ -83,16 +82,16 @@
               
                 <table class="table table-dashboard mg-b-30 ">
                   <thead>
-                    <tr>
+                    <tr >
                       
-                      <th  class="text-right">Action</th>
-                      <th class="text-right">Account Name</th>
-                      <th class="text-right">Accounts Type</th>
-                      <th class="text-right">Description</th>
-                      <th class="text-right">Note</th>
-                      <th class="text-right">User</th>
-                      <th class="text-right">Created At</th>
-                      <th class="text-right">Created By</th>
+                        <th  class="text-right ">Action</th>
+                        <th class="text-right">Model</th>
+                        <th class="text-right">Serial Number</th>
+                        <th class="text-right">Merchant</th>
+                        <th class="text-right">Created At</th>
+                        <th class="text-right">Created By</th>
+                        <th class="text-right">Modified At</th>
+                        <th class="text-right">Modified By</th>
                       
 
 
@@ -103,14 +102,15 @@
                   <tbody>
                     <tr >
 
-                      <td  class="text-right text-capitalize tx-medium"><a href="#ViewAc" data-bs-toggle="modal" class=" btn-primary btn-uppercase btn-group-sm">View</a></td>
-                      <td class="text-right text-capitalize tx-medium">PLURITONE SA - STANDARD BANK</td>
-                      <td class="text-right text-capitalize tx-medium">BANK ACCOUNT</td>
-                      <td class="text-right text-capitalize tx-medium">PLURITONE SA - STANDARD BANK</td>
-                      <td class="text-right text-capitalize tx-medium">PLURITONE SA - STANDARD BANK</td>
-                      <td class="text-right text-capitalize tx-medium">tania</td>
-                      <td class="text-right text-capitalize tx-medium">8/26/2021 8:41:10 AM</td>
-                      <td class="text-right text-capitalize tx-medium">ruddymen</td>
+                        <td  class="text-right text-capitalize tx-medium"><a href="#viewD" data-bs-toggle="modal" class=" btn-primary btn-uppercase btn-group-sm">Manage</a></td>
+                        <td class="text-right text-capitalize tx-medium">EcoBank Visa</td>
+                        <td class="text-right text-capitalize tx-medium">08213870317</td>
+                        <td class="text-right text-capitalize tx-medium">PLUSH COFFE</td>
+                        <td class="text-right text-capitalize tx-medium">2022-05-25T13:07:03.71</td>
+                        <td class="text-right text-capitalize tx-medium">jenovic</td>
+                        <td class="text-right text-capitalize tx-medium">2022-03-15T11:10:29.18</td>
+                        <td class="text-right text-capitalize tx-medium">jenovic</td>
+
                       
                     
                            
@@ -177,7 +177,6 @@
           </div><!-- col -->
 
 
-
           <!-- End Main Content -->
   
         </div>
@@ -188,7 +187,6 @@
       </div>
 
 
-      
       
       <!-- Create account type -->
 
@@ -201,53 +199,31 @@
               </a>
   
               
-                <p class="tx-center tx-uppercase  tx-color-03 tx-spacing-3">Account Details </p>
+                <p class="tx-center tx-uppercase  tx-color-03 tx-spacing-3">Capture POS</p>
                 
                 <div class="card-body">
-
                   <div  class="rounded p-2"> 
-                    <label class="mb-2 tx-color-03  ">Account Type Name</label>
+                    <label class="mb-2 tx-color-03  ">Model</label>
                     <div class="form-group">
-                      <input type="text" class="form-control  form-group-sm "  placeholder="Account Type Name" aria-label="Card number">
+                      <input type="text" class="form-control  form-group-sm "  placeholder="Model" aria-label="Card number">
                     </div>
-                    <label class="mb-2 tx-color-03   ">Account Type</label>
+                    <label class="mb-2 tx-color-03 mt-3  ">Serial Number</label>
                     <div class="form-group">
-                      <select name="" id="" class="form-control">
-                        <option value="">Choose Here</option>
-                       </select>
+                      <input type="text" class="form-control   " placeholder="Serial Number" aria-label="Card number">
                     </div>
-                    <label class="mb-2 tx-color-03  ">Agency</label>
+                    <label class="mb-2 tx-color-03   ">Merchant</label>
                     <div class="form-group">
-                      <input type="text" class="form-control   " placeholder="Account Type Description" aria-label="Card number">
-                    </div>
-                    <label class="mb-2 tx-color-03   ">Description</label>
-                    <div class="form-group">
-                      <input type="text" class="form-control   " placeholder="Account Type Description" aria-label="Card number">
+                        <select name="" id="" class="form-control">
+                            <option value="">Choose Here</option>
+                          </select>
                     </div>
                     
-                    <label class="mb-2 tx-color-03  ">Note</label>
-                    <div class="form-group">
-                      <textarea name="" id="" class="form-control"  cols="10" rows="5"></textarea>
-                    </div>
-                    <label class="mb-2 tx-color-03   ">User</label>
-                    <div class="form-group">
-                      <select name="" id="" class="form-control">
-                        <option value="">Choose User</option>
-                       </select>
-                    </div>
+                    
                     <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
                       <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15"><i data-feather="x" class="mg-r-5"></i> Close</button>
                       <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i data-feather="save" class="mg-r-5"></i> Save</button>
                       
                     </div>
-                    
-                  </div>
-                      
-                    
-                    
-                    
-                    
-                   
                     </div> 
                     
                   </div>
@@ -267,7 +243,7 @@
 
        <!-- Create account type -->
 
-       <div class="modal fade" id="ViewAc" tabindex="-1" role="dialog" aria-hidden="true">
+       <div class="modal fade" id="viewD" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered " role="document">
           <div class="modal-content">
             <div class="modal-body ">
@@ -276,53 +252,33 @@
               </a>
   
               
-                <p class="tx-center tx-uppercase  tx-color-03 tx-spacing-3">Account Details </p>
+                <p class="tx-center tx-uppercase tx-color-03 tx-spacing-3">Pos Details </p>
                 
                 <div class="card-body">
-                  
                   <div  class="rounded p-2"> 
-                    <label class="mb-2 tx-color-03  ">Account Name</label>
+                    <label class="mb-2 tx-color-03  ">Model</label>
                     <div class="form-group">
-                      <input type="text" class="form-control  form-group-sm "  placeholder="Account Type Name" aria-label="Card number">
+                      <input type="text" class="form-control  form-group-sm "  placeholder="Model" aria-label="Card number">
                     </div>
-                    <label class="mb-2 tx-color-03   ">Account Type</label>
+                    <label class="mb-2 tx-color-03 mt-3  ">Serial Number</label>
                     <div class="form-group">
-                      <select name="" id="" class="form-control">
-                        <option value="">Choose Here</option>
-                       </select>
+                      <input type="text" class="form-control   " placeholder="Serial Number" aria-label="Card number">
                     </div>
-                    <label class="mb-2 tx-color-03  ">Agency</label>
+                    <label class="mb-2 tx-color-03   ">Merchant</label>
                     <div class="form-group">
-                      <input type="text" class="form-control   " placeholder="Account Type Description" aria-label="Card number">
+                        <select name="" id="" class="form-control">
+                            <option value="">Choose Here</option>
+                          </select>
                     </div>
-                    <label class="mb-2 tx-color-03  ">Description</label>
-                    <div class="form-group">
-                      <input type="text" class="form-control   " placeholder="Account Type Description" aria-label="Card number">
-                    </div>
-                    <label class="mb-2 tx-color-03  ">Note</label>
-                    <div class="form-group">
-                      <input type="text" class="form-control   " placeholder="Account Type Description" aria-label="Card number">
-                    </div>
-                    <label class="mb-2 tx-color-03   ">User</label>
-                    <div class="form-group">
-                      <select name="" id="" class="form-control">
-                        <option value="">Nice</option>
-                       </select>
-                    </div>
-
+                    
+                    
+                    
                     <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
                       <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15"><i data-feather="save" class="mg-r-5"></i> Save</button>
-                      <button class="btn tx-center btn-sm btn-primary btn-danger pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i data-feather="trash-2" class="mg-r-5"></i> Delete</button>
+                      <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i data-feather="trash-2" class="mg-r-5"></i> Delete</button>
                       <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i data-feather="x" class="mg-r-5"></i> Close</button>
-                    </div>
-                   
-                    
-                    
-                  </div>
                       
-                  
-                    
-                   
+                    </div>
                     </div> 
                     
                   </div>
@@ -331,9 +287,6 @@
             </div><!-- modal-body -->
           </div><!-- modal-content -->
         </div><!-- modal-dialog -->
-
-      </div><!-- modal -->
-
       <!--End Create account type -->
 
 
@@ -352,7 +305,12 @@
 
 
       <!--End  content-header -->
+
+
       <script src="../../assets/js/dashforge.js"></script>
+
+
+      
 
 
    

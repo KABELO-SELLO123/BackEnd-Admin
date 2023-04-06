@@ -222,6 +222,45 @@ $(document).ready(function(){
     //---- End Cash Management -----
 
 
+    //---- Card Sales -----
+
+    $("#cardStock").click(function(){
+    
+      $("#PageLoadHere").load("CARD-SALES/card-stock.html");
+      
+    });
+
+
+    $("#cardHistory").click(function(){
+    
+      $("#PageLoadHere").load("CARD-SALES/card-history.html");
+      
+    });
+
+
+
+
+    //---- End Card Sales -----
+
+
+    //---- Start POS -----
+
+    $("#posbtn").click(function(){
+    
+      $("#PageLoadHere").load("POS/Pos-page.html");
+      
+    });
+
+
+    //---- End POS -----
+
+
+
+    
+
+
+    
+
   
 
 
