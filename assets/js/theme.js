@@ -241,6 +241,7 @@ $("#MaxiCashMe").click(function(){
     //--Agents--
     $("#AgentCard").click(function(){
     
+<<<<<<< HEAD
       $("#PageLoadHere").load("AGENTS/AgentCard.html");
       
     });
@@ -275,3 +276,194 @@ $("#MaxiCashMe").click(function(){
       
     });
     //--End Agents --
+=======
+  });
+
+  $("#last50RegisteredUsers").click(function(){
+    
+    $("#PageLoadHere").load("MANAGEMENT/last-50-registerd-users.html");
+    
+  });
+
+
+  $("#MaxiCashUserList").click(function(){
+    
+    $("#PageLoadHere").load("MANAGEMENT/maxicash-user-list.html");
+    
+  });
+
+  
+  $("#last50Transactions").click(function(){
+    
+    $("#PageLoadHere").load("MANAGEMENT/last-50-transaction.html");
+    
+  });
+
+  $("#BirthdayList").click(function(){
+    
+    $("#PageLoadHere").load("MANAGEMENT/birthday-list.html");
+    
+  });
+
+  $("#last50AirtimeSales").click(function(){
+    
+    $("#PageLoadHere").load("MANAGEMENT/last-50-airtime-sales.html");
+    
+  });
+
+
+  //---- End Management -----
+
+
+
+
+
+   //---- Start Cash Management -----
+
+
+
+   $("#AccountType").click(function(){
+    
+    $("#PageLoadHere").load("CASH-MANAGEMENT/Account-types.html");
+    
+  });
+
+
+  $("#Accounts").click(function(){
+    
+    $("#PageLoadHere").load("CASH-MANAGEMENT/Accounts.html");
+    
+  });
+
+
+  $("#Service").click(function(){
+    
+    $("#PageLoadHere").load("CASH-MANAGEMENT/service.html");
+    
+  });
+
+
+
+  $("#TransactionHistory").click(function(){
+    
+    $("#PageLoadHere").load("CASH-MANAGEMENT/transaction-history.html");
+    
+  });
+
+
+  
+  $("#EndOfDay").click(function(){
+    
+    $("#PageLoadHere").load("CASH-MANAGEMENT/end-of-day.html");
+    
+  });
+
+
+
+  $("#AccountsBalances").click(function(){
+    
+    $("#PageLoadHere").load("CASH-MANAGEMENT/Account-balance.html");
+    
+  });
+
+
+
+
+
+
+    //---- End Cash Management -----
+
+
+    //---- Card Sales -----
+
+    $("#cardStock").click(function(){
+    
+      $("#PageLoadHere").load("CARD-SALES/card-stock.html");
+      
+    });
+
+
+    $("#cardHistory").click(function(){
+    
+      $("#PageLoadHere").load("CARD-SALES/card-history.html");
+      
+    });
+
+
+
+
+    //---- End Card Sales -----
+
+
+    //---- Start POS -----
+
+    $("#posbtn").click(function(){
+    
+      $("#PageLoadHere").load("POS/Pos-page.html");
+      
+    });
+
+
+    //---- End POS -----
+
+
+
+    //---- Start Users  -----
+
+
+    $("#createUserAccount").click(function(){
+    
+      $("#PageLoadHere").load("USERS/create-user-account.html");
+      
+    });
+
+    
+    $("#UploadBulkUsers").click(function(){
+    
+      $("#PageLoadHere").load("USERS/upload-bulk-users.html");
+      
+    });
+
+
+
+
+    //---- End Users -----
+
+     //----Start Payments -----
+
+     $("#uploadBulkPayments").click(function(){
+    
+      $("#PageLoadHere").load("PAYMENTS/Upload-Bulk-Payment.html");
+      
+    });
+
+
+
+     //----End Payments -----
+
+
+     //----Start Maxicash Card -----
+
+     $("#cardApproval").click(function(){
+    
+      $("#PageLoadHere").load("MAXICASH-CARD/Card-Approval.html");
+      
+    });
+
+
+    $("#cardTopUpApproval").click(function(){
+    
+      $("#PageLoadHere").load("MAXICASH-CARD/Card-Top-Up-Approval.html");
+      
+    });
+
+    $("#topUpCardForMerchant").click(function(){
+    
+      $("#PageLoadHere").load("MAXICASH-CARD/top-up-card-for-merchant.html");
+      
+    });
+
+
+     //----End Maxicash Card -----
+
+>>>>>>> 99cf706e20e4b6952bfe31322effd09f3f49be45

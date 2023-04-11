@@ -43,6 +43,10 @@
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="../../assets/css/dashforge.css">
     <link rel="stylesheet" href="../../assets/css/dashforge.dashboard.css">
+
+    <link href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css" rel="stylesheet" />
+    
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     
@@ -55,7 +59,7 @@
 
     <aside class="aside aside-fixed">
       <div class="aside-header">
-        <a href="./fe-flow.html" class="aside-logo"><img src="../MaxiCash-Logo-25.png" width="100px" alt=""></a>
+        <a  class="aside-logo"><img src="../MaxiCash-Logo-25.png" width="100px" alt=""></a>
         <a href="" class="aside-menu-link">
           <i data-feather="menu"></i>
           <i data-feather="x"></i>
@@ -132,7 +136,7 @@
               <li><a id="TransactionHistory">Transaction History</a></li>
               <li><a id="EndOfDay">End Of Day</a></li>
               <li><a href="#tauxdechange" data-bs-toggle="modal">Taux De Change</a></li>
-              <li><a  id="#AccountsBalances" >Accounts Balances</a></li>
+              <li><a  id="AccountsBalances" >Accounts Balances</a></li>
             </ul>
           </li>
           <li class="nav-item with-sub">
@@ -172,10 +176,11 @@
           <li class="nav-item with-sub">
             <a href="" class="nav-link "><i data-feather="arrow-up"></i> <span class="mt-2">Card Sales</span></a>
             <ul class="mt-2">
-              <li><a href="page-profile-view.html">View Profile</a></li>
-              <li><a href="page-connections.html">Connections</a></li>
-              <li><a href="page-groups.html">Groups</a></li>
-              <li><a href="page-events.html">Events</a></li>
+              <li><a href="page-profile-view.html">Card Application</a></li>
+              <li><a href="page-connections.html">Card Order</a></li>
+              <li><a  href="#CardLog" data-bs-toggle="modal">Card log</a></li>
+              <li><a id="cardStock">card Stock</a></li>
+              <li><a id="cardHistory">Card History</a></li>
               
             </ul>
           </li>
@@ -192,14 +197,20 @@
           <li class="nav-item with-sub">
             <a href="" class="nav-link "><i data-feather="smartphone"></i> <span class="mt-2">POS</span></a>
             <ul class="mt-2">
+<<<<<<< HEAD
               <li><a id="Device">Devices</a></li>
               
+=======
+              <li><a id="posbtn">Device</a></li>
+             
+>>>>>>> 99cf706e20e4b6952bfe31322effd09f3f49be45
               
             </ul>
           </li>
           <li class="nav-item with-sub">
             <a href="" class="nav-link "><i data-feather="users"></i> <span class="mt-2">Agents</span></a>
             <ul class="mt-2">
+<<<<<<< HEAD
               <li><a id="AgentList">Agent List</a></li>
               <li><a id="AgentCard">Agent Card Order</a></li>
               <li><a id="CardSales">Card Sales</a></li>
@@ -207,36 +218,38 @@
               <li><a id="CardReload">Card Reloads</a></li>
               <li><a id="CardWithdrawals">Card Withdrawals</a></li>
               <li><a id="CashPickUp">Cash Pickup</a></li>
+=======
+              <li><a href="page-profile-view.html">Agent List</a></li>
+              <li><a href="page-connections.html">Agent Card Order</a></li>
+              <li><a href="page-groups.html">Card Sales</a></li>
+              <li><a href="page-events.html">MaxiCashMe Transfers</a></li>
+              <li><a href="page-events.html">Card Reloads</a></li>
+              <li><a href="page-events.html">Card Withdrawals</a></li>
+              <li><a href="page-events.html">Cash Pickup</a></li>
+              
+>>>>>>> 99cf706e20e4b6952bfe31322effd09f3f49be45
             </ul>
           </li>
           <li class="nav-item with-sub">
             <a href="" class="nav-link "><i data-feather="user"></i> <span class="mt-2">Users</span></a>
             <ul class="mt-2">
-              <li><a href="page-profile-view.html">View Profile</a></li>
-              <li><a href="page-connections.html">Connections</a></li>
-              <li><a href="page-groups.html">Groups</a></li>
-              <li><a href="page-events.html">Events</a></li>
-              
+              <li><a id="createUserAccount">Create User Account</a></li>
+              <li><a id="UploadBulkUsers">Upload Bulk Users</a></li> 
             </ul>
           </li>
           <li class="nav-item with-sub">
             <a href="" class="nav-link "><i data-feather="arrow-down"></i> <span class="mt-2">Payments</span></a>
             <ul class="mt-2">
-              <li><a href="page-profile-view.html">View Profile</a></li>
-              <li><a href="page-connections.html">Connections</a></li>
-              <li><a href="page-groups.html">Groups</a></li>
-              <li><a href="page-events.html">Events</a></li>
-              
+              <li><a id="uploadBulkPayments">Upload Bulk Payment</a></li>
             </ul>
           </li>
           <li class="nav-item with-sub">
             <a href="" class="nav-link "><i data-feather="credit-card"></i> <span class="mt-2">Maxicash Card</span></a>
             <ul class="mt-2">
-              <li><a href="page-profile-view.html">View Profile</a></li>
-              <li><a href="page-connections.html">Connections</a></li>
-              <li><a href="page-groups.html">Groups</a></li>
-              <li><a href="page-events.html">Events</a></li>
-              
+              <li><a id="cardApproval">Card Approval</a></li>
+              <li><a id="cardTopUpApproval">Card Top Up Approval</a></li>
+              <li><a id="topUpCardForMerchant">Top Up Card For Merchant</a></li>
+              <li><a href="page-events.html">App Card Orders</a></li>
             </ul>
           </li>
           <li class="nav-item with-sub">
@@ -246,15 +259,11 @@
               <li><a href="page-connections.html">Connections</a></li>
               <li><a href="page-groups.html">Groups</a></li>
               <li><a href="page-events.html">Events</a></li>
-              
             </ul>
           </li>
-          
-          
         </ul>
       </div>
     </aside>
-
     
 
     <!-- Page holder -->
@@ -277,6 +286,9 @@
       <!-- Page Content -->
 
       <div id="PageLoadHere">
+
+
+        
 
             
 
@@ -388,6 +400,115 @@
 
       <!-- End Taux De Change -->
 
+
+
+      <!-- Card log -->
+      
+
+      <div class="modal fade modal-xl " id="CardLog" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered " role="document">
+          <div class="modal-content ">
+            <div class="modal-body">
+              <a href="#" role="button" class="close pos-absolute t-15 r-15" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </a>
+  
+              
+                <p class="tx-center tx-uppercase tx-color-03 tx-spacing-3">sold card </p>
+                
+                <div class="card-body ">
+                  
+
+                  <div class="row">
+
+                    <div class="col-6">
+
+                      <div  class="rounded p-2"> 
+                        <label class="mb-2 tx-color-03  ">Agency</label>
+                        <div class="form-group">
+                          <select name="" id="" class="form-control">
+                            <option value="">Zando</option>
+                          </select>
+                        </div>
+                        <label class="mb-2 tx-color-03   ">Client Name</label>
+                        <div class="form-group">
+                          <input type="text" class="form-control   " placeholder="" aria-label="Client">
+                        </div>
+                        <label class="mb-2 tx-color-03  ">Currency</label>
+                        <div class="form-group">
+                          <select name="" id="" class="form-control">
+                            <option value="">Choose here</option>
+                          </select>
+                        </div>
+                        <label class="mb-2 tx-color-03   ">Price</label>
+                        <div class="form-group">
+                          <input type="text" class="form-control   " placeholder="" aria-label="Address">
+                        </div>
+                        <div class=" mt-3 mb-3">
+                          <input type="checkbox" class="form-check-input  me-2 "  aria-label="Card number">
+                        <label for="checkOne" class="form-check-label" style="margin-top: 1px;">Fee</label>
+                        </div>
+                        
+                       
+                        
+                        
+                        
+                        
+
+                        </div> 
+
+                    </div>
+                    <div class="col-6">
+
+                      <div  class="rounded p-2"> 
+                        <label class="mb-2 tx-color-03  ">Sold To</label>
+                        <div class="form-group">
+                          <select name="" id="" class="form-control">
+                            <option value="">Choose Here</option>
+                          </select>
+                        </div>
+                        
+                        <label class="mb-2 tx-color-03  ">Client CellPhone</label>
+                        <div class="form-group">
+                          <input type="text" class="form-control  form-group-sm "  placeholder="" aria-label="Card number">
+                        </div>
+                        <label class="mb-2 tx-color-03  ">Quanity</label>
+                        <div class="form-group">
+                          <input type="number" class="form-control  form-group-sm "  placeholder="City" aria-label="Card number">
+                        </div>
+
+                        <div class=" mt-3 mb-3">
+                          <input type="checkbox" class="form-check-input  me-2 "  aria-label="Card number">
+                        <label for="checkOne" class="form-check-label" style="margin-top: 1px;">Promotion</label>
+                        </div>
+                        
+                        
+
+                        </div> 
+
+                    </div>
+
+                  </div>
+                    
+                    <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
+                      
+                      <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15"><i data-feather="save" class="mg-r-5"></i> Save</button>
+                      <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i data-feather="x" class="mg-r-5"></i> Cancel</button>
+
+                      
+                    </div>
+
+                  </div>
+                
+              </div>
+            </div><!-- modal-body -->
+          </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+
+
+
+      <!-- End Card log -->
+
       
       <footer class="footer fixed-bottom">
         <div>
@@ -431,6 +552,28 @@
     <script src="../../assets/js/dashforge.settings.js"></script>
     
     <script src="../assets/js/theme.js"></script>
+
+    <!-- Links -->
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/feather-icons/feather.min.js"></script>
+    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../lib/prismjs/prism.js"></script>
+    <script src="../lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    
+    <script src="../lib/select2/js/select2.min.js"></script>
+
+     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+     <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+     <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
 
 
 

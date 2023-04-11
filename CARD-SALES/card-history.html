@@ -1,7 +1,8 @@
 
+    <!-- Page holder -->
 
     <div class="content ht-100v pd-0">
-      
+     
 
       <div class="content-body">
         <div class="container pd-x-0 ">
@@ -10,8 +11,8 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                   <li class="breadcrumb-item"><a href="../fe-flow.html">Dashboard</a></li>
-                  <li class="breadcrumb-item " aria-current="page">GTP</li>
-                  <li class="breadcrumb-item active " aria-current="page">card Reload</li>
+                  <li class="breadcrumb-item " aria-current="page">Card Sales</li>
+                  <li class="breadcrumb-item active " aria-current="page">Cards History</li>
                 </ol>
               </nav>
             </div>
@@ -25,39 +26,29 @@
             <div class="col-lg-12">
               <div class="card">
                 <div class="card-body">
-                  <p class="tx-uppercase tx-11">Card Reload Details</p>
+                  <p class="tx-uppercase tx-11">Cards History</p>
 
                   <div  class="rounded p-2"> 
-                    <label class="mb-2 tx-color-03  ">MaxiCash Card ID</label>
+                    <label class="mb-2 tx-color-03  ">Date From</label>
                     <div class="d-md-flex align-items-center justify-content-between">
-                      <input type="text" class="form-control  form-group-sm "  placeholder="" aria-label="Card number">
+                      <input type="date" class="form-control  form-group-sm "  placeholder="" aria-label="Card number">
                     </div>
-                    <label class="mb-2 tx-color-03 mt-3  ">Last 4 Digits</label>
+                    <label class="mb-2 tx-color-03 mt-3  ">Date To</label>
                     <div class="d-md-flex align-items-center justify-content-between">
-                      <input type="text" class="form-control   " placeholder="" aria-label="Card number">
+                      <input type="date" class="form-control   " placeholder="" aria-label="Card number">
                     </div>
-                    <label class="mb-2 tx-color-03 mt-3  ">Mobile Phone Number</label>
+                    <label class="mb-2 tx-color-03 mt-3  ">Type</label>
                     <div class="d-md-flex align-items-center justify-content-between">
-                      <input type="text" class="form-control   " placeholder="" aria-label="Card number">
+                        <select name="" id="" class="form-control">
+                            <option value="">Choose Here</option>
+                        </select>
                     </div>
-                    <label class="mb-2 tx-color-03 mt-3  ">Amount</label>
-                    <div class="d-md-flex align-items-center justify-content-between">
-                      <input type="text" class="form-control   " placeholder="" aria-label="Card number">
-                    </div>
-                    <label class="mb-2 tx-color-03 mt-3  ">Amount To Reload</label>
-                    <div class="d-md-flex align-items-center justify-content-between">
-                      <input type="text" class="form-control   " placeholder="" aria-label="Card number">
-                    </div>
-                    <label class="mb-2 tx-color-03 mt-3  ">Fee</label>
-                    <div class="d-md-flex align-items-center justify-content-between">
-                      <input type="text" class="form-control   " placeholder="" aria-label="Card number">
-                    </div>
+                   
+                    
+                   
 
                   
-                    <div class=" mt-3">
-                      <input type="checkbox" class="form-check-input  me-2 "  aria-label="Card number">
-                    <label for="checkOne" class="form-check-label" style="margin-top: 1px;">Calculate Fee (Yes/No)</label>
-                    </div>
+                   
                     
                     <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
                       <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15"><i data-feather="x" class="mg-r-5"></i> Clear</button>
@@ -82,7 +73,7 @@
             <div class="col-lg-12 col-xl-12 mg-t-10 ">
               
               <div class="card mg-b-10 ">
-                <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Card Reload</p>
+                <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Cards History</p>
 
                 <!-- Files -->
                 <div class="row row-xs">
@@ -138,14 +129,19 @@
                     <thead>
                       <tr >
                         
+                        <th class="text-right">Date</th>
+                        <th class="text-right">Office</th>
                         <th class="text-right">Type</th>
-                        <th class="text-right">Transaction ID</th>
-                        <th class="text-right">Amount</th>
-                        <th class="text-right">FromCustomerID</th>
-                        <th class="text-right">ToCustomerID</th>
-                        <th class="text-right">Two Last Four Digits</th>
-                        <th class="text-right">CreateAt</th>
-                        <th class="text-right">CreatedBy</th>
+                        <th class="text-right">Client Name</th>
+                        <th class="text-right">Client Tel</th>
+                        <th class="text-right">Quanity</th>
+                        <th class="text-right">Running Stock</th>
+                        <th class="text-right">Price</th>
+                        <th class="text-right">Currency</th>
+                        <th class="text-right">Free</th>
+                        <th class="text-right">Prmotion</th>
+                        <th class="text-right">Description</th>
+                        <th class="text-right">Processed By</th>
 
 
                        
@@ -155,14 +151,8 @@
                     </thead>
                     <tbody>
                       <tr >
-                        <td class="text-right text-capitalize tx-medium">GTP Card Reload</td>
-                        <td class="text-right text-capitalize tx-medium">840580729</td>
-                        <td class="text-right text-capitalize tx-medium">25</td>
                         <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium">13847965</td>
-                        <td class="text-right text-capitalize tx-medium">1884</td>
-                        <td class="text-right text-capitalize tx-medium">2022-07-11T16:25:14.427</td>
-                        <td class="text-right text-capitalize tx-medium">Therese</td>
+                        
                         
                         
                        
@@ -248,6 +238,17 @@
 
      
 
-      <script src="../../assets/js/dashforge.js"></script>
       
 
+
+      <!-- End Path -->
+
+
+
+
+
+
+      <!--End  content-header -->
+
+
+      <script src="../../assets/js/dashforge.js"></script>
