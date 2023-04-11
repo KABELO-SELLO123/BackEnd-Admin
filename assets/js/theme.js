@@ -415,6 +415,12 @@ $("#MaxiCashMe").click(function(){
       
     });
 
+    $("#topUpCardForMerchant").click(function(){
+    
+      $("#PageLoadHere").load("MAXICASH-CARD/top-up-card-for-merchant.html");
+      
+    });
+
 
      //----End Maxicash Card -----
 
