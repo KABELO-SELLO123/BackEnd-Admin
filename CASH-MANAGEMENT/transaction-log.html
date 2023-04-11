@@ -243,258 +243,73 @@
     <!-- Page holder -->
 
     <div class="content ht-100v pd-0">
-      <div class="content-header">
-        <div class="content-search">
-          <i data-feather="search"></i>
-          <input type="search" class="form-control" placeholder="Search...">
-        </div>
-        <nav class="nav">
-          <a href="" class="nav-link"><i data-feather="help-circle"></i></a>
-          <a href="" class="nav-link"><i data-feather="grid"></i></a>
-          <a href="" class="nav-link"><i data-feather="align-left"></i></a>
-        </nav>
-      </div>
+      
 
-      <div class="content-body">
-        <div class="container pd-x-0 ">
-           <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
-            <div>
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                  <li class="breadcrumb-item"><a href="../fe-flow.html">Dashboard</a></li>
-                  <li class="breadcrumb-item " aria-current="page">Cash Management</li>
-                  <li class="breadcrumb-item active " aria-current="page">Transaction History</li>
-                </ol>
-              </nav>
-            </div>
-          </div>
 
-          <!-- Main Content -->
 
-          <div class="row row-xs">
 
-            <!-- Col Card Col ID -->
-            <div class="col-lg-12">
-              <div class="card">
+      
+      
+      <!-- Create account type -->
+
+      <div class="modal fade" id="addType" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered " role="document">
+          <div class="modal-content">
+            <div class="modal-body ">
+              <a href="#" role="button" class="close pos-absolute t-15 r-15" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </a>
+  
+              
+                <p class="tx-center tx-uppercase  tx-color-03 tx-spacing-3">Login To Account</p>
+                
                 <div class="card-body">
-                  <p class="tx-uppercase tx-11">Transaction History</p>
 
                   <div  class="rounded p-2"> 
-                    <label class="mb-2 tx-color-03  ">Date From</label>
-                    <div class="d-md-flex col-md-4  col-lg-4 ">
-                      <input type="date" class="form-control  form-group-sm   "  placeholder="" aria-label="Card number">
-                    </div>
-                    <label class="mb-2 tx-color-03 mt-3  ">Date To</label>
-                    <div class="d-md-flex col-md-4  col-lg-4  ">
-                      <input type="date" class="form-control   " placeholder="" aria-label="Card number">
-                    </div>
-                    <label class="mb-2 tx-color-03 mt-3  ">Account Name</label>
-                    <div class="d-md-flex  col-md-4  col-lg-4 ">
+                    <label class="mb-2 tx-color-03  ">Account Name</label>
+                    <div class="form-group">
                       <select name="" id="" class="form-control">
                         <option value="">Choose Here</option>
-                      </select>
+                       </select>
                     </div>
-                    <label class="mb-2 tx-color-03 mt-3  ">Service</label>
-                    <div class="d-md-flex col-md-4  col-lg-4">
-                      <select name="" id="" class="form-control">
-                        <option value="">Choose Here</option>
-                      </select>
-                    </div>
-
+                    
+                    
+                
+                   
+                    
+                    
+                    
+                  </div>
+                      
+                
                     
                     
                    
-            
-                    
-                    <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
-                      <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15"><i data-feather="x" class="mg-r-5"></i> Clear</button>
-                      <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i data-feather="search" class="mg-r-5"></i> Search</button>
-                      
-                    </div>
-                    </div>
-                 
-                  
-                    
-                    
+                    </div> 
                     
                   </div>
-                  
-                </div>
-              </div>
-            </div>
-            <!-- End Card Col ID -->
-
-            <div class="col-lg-12 col-xl-12 mg-t-10  ">
-              
-              <div class="card mg-b-10 ">
-                <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Reports</p>
-
-                <!-- Files -->
-                <div class="row row-xs">
-
-                  <div class="col-lg-12">
-
-                      <div class="card">
-
-                          <div class="card-body">
-                              
-                              
-                              <div class="d-md-flex   justify-content-between tx-center ">
-                                   <div class="   mg-b-20 mg-lg-b-25 mg-xl-b-30">
-                                      <div class=" d-md-block ">
-                                          <button class="btn tx-center btn-sm pd-x-15 btn-danger btn-uppercase"><i data-feather="copy" class="wd-10 mg-r-5"></i> Copy</button>
-                                          <button class="btn tx-center btn-sm pd-x-15 btn-danger btn-uppercase mg-l-5"><i data-feather="file" class="wd-10 mg-r-5"></i> Excel</button>
-                                          <button class="btn tx-center btn-sm pd-x-15 btn-danger btn-uppercase mg-l-5"><i data-feather="download" class="wd-10 mg-r-5"></i> PDF</button>
-                                          
-                                        
-                                      </div>
-                         
-                                  </div>
-                                  
-                              <div class="d-flex tx-center justify-content-center  mg-b-20 mg-lg-b-25 mg-xl-b-30">
-                                <label class=" tx-color-03 tx-center  mt-2 me-2">Filter Records</label>
-                                <div class="d-flex">
-                                  
-                                  <input type="text" class="form-control  " placeholder="" aria-label="Filter Records">
-                                </div>
-                                
-                              
-                              </div>
-                                  
-                              </div>
-
-
-                          </div>
-
-                      </div>
-
-                  </div>
-
-                  
-                </div>
-
-
-                <!-- End Files -->
-                <div class="table-responsive p-3">
-                  
                 
-                  <table class="table table-dashboard mg-b-30 ">
-                    <thead>
-                      <tr >
-                        
-                        <th class="text-right">Date</th>
-                        <th class="text-right">Account</th>
-                        <th class="text-right">Transcation ID</th>
-                        <th class="text-right">Service</th>
-                        <th class="text-right">Reference</th>
-                        <th class="text-right">Description (Libelle)</th>
-                        <th class="text-right">Commission</th>
-                        <th class="text-right">Agent</th>
-                        <th class="text-right">Amount (usd)</th>
-                        <th class="text-right">Amount (cdf)</th>
-                        <th class="text-right">Amount (zar)</th>
-                        <th class="text-right">Running Balance</th>
-                        <th class="text-right">Processed By</th>
-                        
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr >
+              </div>
+            </div><!-- modal-body -->
+          </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
 
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        <td class="text-right text-capitalize tx-medium"></td>
-                        
-                        
-                        
-                        
-                       
+      </div><!-- modal -->
 
-                        
-                       
-                      </tr>
-                      
-                      
-                    </tbody>
-                  </table>
-
-                 
-
-                  
-                  
-                </div><!-- table-responsive -->
-
-
-                <!-- Pagination -->
-
-                <div class="row row-xs">
-
-                    <div class="col-lg-12 ">
-
-                        <div class="card">
-                    
-                            <div class="card-body">
-
-                              <div class="tx-center">
-                                <p class="tx-color-03" >*<span>Showing 1 to 10 of 9,488 entries</span>*</p>
-                            </div>
-                            
-                            <div class="mt-2 ">
-                                <nav aria-label="Page navigation ">
-                                    <ul class="pagination pagination-circle pagination-sm justify-content-center ">
-                                      <li class="page-item disabled " ><a class="page-link page-link-icon" href="#"><i data-feather="chevron-left"></i></a></li>
-                                      <li class="page-item active  "><a class="page-link" href="#">1</a></li>
-                                      <li class="page-item "><a class="page-link" href="#">2</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                      <li class="page-item"><a class="page-link page-link-icon" href="#"><i data-feather="chevron-right"></i></a></li>
-                                    </ul>
-                                  </nav>
-                            </div>
-
-                            
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    
-                  </div>
-
-
-                <!-- End Pagination -->
-
-             
-               
-                    
-                  
-              </div><!-- card -->
-
-              
-            </div><!-- col -->
+      <!--End Create account type -->
 
 
 
-          <!-- End Main Content -->
-  
-        </div>
 
-        
-  
-  
-      </div>
+        </div><!-- modal-dialog -->
 
+      </div><!-- modal -->
+
+      <!--End Create account type -->
+
+
+
+      <!-- End Details -->
      
 
       
@@ -508,8 +323,6 @@
 
 
       <!--End  content-header -->
-
-      <script src="../../assets/js/dashforge.js"></script>
 
 
       

@@ -111,11 +111,121 @@ $(document).ready(function(){
     $("#PageLoadHere").load("GTP/gtp-card-reload.html");
     
   });
-
-
   //---- End GTP -----
 
+  //--Transactions--
+  $("#KYC").click(function(){
+    
+    $("#PageLoadHere").load("TRANSACTIONS/KYC-Page.html");
+    
+  });
+  $("#MobilePayment").click(function(){
+    
+    $("#PageLoadHere").load("TRANSACTIONS/MobilePayment-Page.html");
+    
+  });
+  $("#BankPayment").click(function(){
+    
+    $("#PageLoadHere").load("TRANSACTIONS/Bank-Page.html");
+    
+  });
+  $("#MoneyPayment").click(function(){
+    
+    $("#PageLoadHere").load("TRANSACTIONS/MoneyPayment-Page.html");
+    
+  }); $("#GatewayPayment").click(function(){
+    
+    $("#PageLoadHere").load("TRANSACTIONS/Gateway-Page.html");
+    
+  });
+  $("#CardPayment").click(function(){
+    
+    $("#PageLoadHere").load("TRANSACTIONS/Card-Page.html");
+    
+  });
+  $("#VoucherOrders").click(function(){
+    
+    $("#PageLoadHere").load("TRANSACTIONS/Voucher-Page.html");
+    
+  });
+  $("#Rate").click(function(){
+    
+    $("#PageLoadHere").load("TRANSACTIONS/Rate-Page.html");
+    
+  });
+  $("#Registration").click(function(){
+    
+    $("#PageLoadHere").load("TRANSACTIONS/Registration-Page.html");
+    
+  }); $("#OTP").click(function(){
+    
+    $("#PageLoadHere").load("TRANSACTIONS/OTP-Page.html");
+    
+  });
+  //--End Transactions--
 
+  //--MaxiCash--
+}); $("#Transaction").click(function(){
+    
+  $("#PageLoadHere").load("MAXICASH-ME/Transaction-Page.html");
+  
+});
+
+ $("#Thunes").click(function(){
+    
+  $("#PageLoadHere").load("MAXICASH-ME/Thunes-Page.html");
+  
+});
+
+$("#MaxiCashMe").click(function(){
+    
+  $("#PageLoadHere").load("MAXICASH-ME/MaxiCashMe-Page.html");
+  
+});
+ $("#Providers").click(function(){
+    
+  $("#PageLoadHere").load("MAXICASH-ME/Providers-Page.html");
+  
+});
+  //--MaxiCash--
+
+  //--Merchants--
+  $("#TestAccount").click(function(){
+    
+    $("#PageLoadHere").load("MERCHANTS/CreateTestAccount.html");
+    
+  });
+  $("#LiveTest").click(function(){
+    
+    $("#PageLoadHere").load("MERCHANTS/CreateLiveMerchant-Page.html");
+    
+  });
+  $("#Billing").click(function(){
+    
+    $("#PageLoadHere").load("MERCHANTS/Billing-Page.html");
+    
+  });
+  $("#Settings").click(function(){
+    
+    $("#PageLoadHere").load("MERCHANTS/Settings-Page.html");
+    
+  });
+  $("#Refund").click(function(){
+    
+    $("#PageLoadHere").load("MERCHANTS/Refund-Page.html");
+    
+  });
+  $("#Fee").click(function(){
+    
+    $("#PageLoadHere").load("MERCHANTS/Fee-Page.html");
+    
+  });
+  $("#Settlements").click(function(){
+    
+    $("#PageLoadHere").load("MERCHANTS/Settlement-Page.html");
+    
+  });
+  //--End Merchants --
 
 
   //---- Start Management -----
@@ -307,22 +417,5 @@ $(document).ready(function(){
 
 
      //----End Maxicash Card -----
-
-
-
-
-
-
-
-
-
-
-    
-
-
-    
-
-  
-
 
 });
