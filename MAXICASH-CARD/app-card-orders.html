@@ -1,0 +1,201 @@
+
+<style>
+    button.dt-button  {
+      border-radius: 2px;
+      color: #fff;
+      background:  #0168fa;
+      border-radius: 3px;
+      outline: none !important;
+      border-color: none;
+      border: none;
+      font-family: 'IBM Plex Sans';
+      width: 70px;
+  
+  
+    
+     
+  }
+  button.dt-button:hover:not(.disabled){
+  
+    border-radius: 2px;
+    color: #fff;
+    background: #dc3545;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+    outline: none;
+    
+  
+  }
+  </style>
+
+    <div class="content ht-100v pd-0">
+      
+
+        <div class="content-body">
+          <div class="container pd-x-0 ">
+             <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
+              <div>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                    <li class="breadcrumb-item"><a href="../fe-flow.html">Dashboard</a></li>
+                    <li class="breadcrumb-item " aria-current="page">GTP</li>
+                    <li class="breadcrumb-item active " aria-current="page">card Reload</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+  
+            <!-- Main Content -->
+  
+            <div class="row row-xs">
+  
+              <!-- Col Card Col ID -->
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="tx-uppercase tx-11">App Card Orders</p>
+  
+                    <div  class="rounded p-2"> 
+                      <label class="mb-2 tx-color-03  ">Date From</label>
+                      <div class="d-md-flex align-items-center justify-content-between">
+                        <input type="date" class="form-control  form-group-sm "  placeholder="" aria-label="Card number">
+                      </div>
+                      <label class="mb-2 tx-color-03 mt-3  ">Date To</label>
+                      <div class="d-md-flex align-items-center justify-content-between">
+                        <input type="date" class="form-control   " placeholder="" aria-label="Card number">
+                      </div>
+                      <label class="mb-2 tx-color-03 mt-3 ">Status</label>
+                      <div class="form-group">
+                        <select name="" id="" class="form-control">
+                          <option value="">Choose Here</option>
+                          <option value="">Cancelled</option>
+                          <option value="">Failed</option>
+                          <option value="">Incomplete</option>
+                         </select>
+                      </div>
+                      
+                      
+  
+                    
+                     
+                      
+                      <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
+                        <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15"><i data-feather="x" class="mg-r-5"></i> Clear</button>
+                        <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i data-feather="search" class="mg-r-5"></i> Search</button>
+                        
+                      </div>
+                      </div>
+                   
+                    
+                      
+                      
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <!-- End Card Col ID -->
+  
+              <div class="col-lg-12 col-xl-12 mg-t-10 ">
+              
+                <div class="card mg-b-10 ">
+                  <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">App Card Orders</p>
+  
+                  
+                  <div class="table-responsive p-3 ">
+                  
+                  
+                  
+                      <div data-label="Example" class="df-example demo-table ">
+                      <table id="example3" class="table rounded">
+                          <thead>
+                          <tr>
+                              <th class="wd-20p">Name</th>
+                              <th class="wd-25p">Position</th>
+                              <th class="wd-20p">Office</th>
+                              <th class="wd-15p">Age</th>
+                              <th class="wd-20p">Salary</th>
+                          </tr>
+                          </thead>
+                      </table>
+                      </div><!-- df-example -->
+  
+                    
+                  </div><!-- table-responsive -->
+  
+  
+                 
+
+                         
+                    
+                </div>
+  
+                
+         </div>
+
+  
+         
+  
+  
+              <!-- End Table -->
+             
+            </div>
+  
+  
+            <!-- End Main Content -->
+    
+          </div>
+  
+          
+    
+    
+        </div>
+  
+       
+  
+        
+    <script src="../../assets/js/dashforge.js"></script>
+
+
+
+
+    <script>
+        $(function(){
+          'use strict'
+
+      
+          $('#example3').DataTable({
+            'ajax': '../assets/data/datatable-arrays.txt',
+              dom: 'Bfrtip',
+              buttons: [
+              'copy',
+              'excel',
+              'pdf'
+            ],
+            language: {
+              searchPlaceholder: 'Search...',
+              sSearch: '',
+              lengthMenu: '_MENU_ items/page',
+              
+             
+            }
+            
+          });
+        
+       
+        });
+
+        
+
+
+      </script>
+        
+        
+        
+  
+  

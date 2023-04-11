@@ -420,7 +420,12 @@ $("#MaxiCashMe").click(function(){
       $("#PageLoadHere").load("MAXICASH-CARD/top-up-card-for-merchant.html");
       
     });
-
+    $("#appCardOrders").click(function(){
+    
+      $("#PageLoadHere").load("MAXICASH-CARD/app-card-orders.html");
+      
+    });
+    
 
      //----End Maxicash Card -----
 
