@@ -1,92 +1,126 @@
-                <!-- full page content (main container) -->
-                <div class="content-body">
-                    <!-- secondary container-->
-                    <div class="container pd-x-0">
-                
-                        <!-- dashBoard/Fee structured (inside SC)-->
-                        <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
-                            <div>
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                                        <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
-                                        <li class="breadcrumb-item">Transaction</li>
-                                        <li class="breadcrumb-item active" aria-current="page">Pending Bank Payments</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-                        <!--dashBoard/Fee structured-->
-                
-                        <div class="content ht-100v pd-0">
-                            <div class="col-lg-12 col-xl-8 mg-t-10" style="width: 100%;">
-                                <div class="card mg-b-10">
-                
-                                    <!--fieldset container-->
-                                    <fieldset class="form-fieldset">
-                                         <!--fieldset legend-->
-                                         <legend>Search Gateway Transactions...</legend>
-                                         <!--fieldset legend-->
-                                        <form class="form-fieldset">
-                                            <div class="form-row">
-                                                <div>
-                                                    <label><strong>Refund Status</strong></label>
-                                                    <select class="form-select">
-                                                        <option>All</option>
-                                                        <option>transactionID</option>
-                                                        <option>Merchant Reference</option>
-                                                        <option>Gateway Reference</option>
-                                                        <option>Merchant Name</option>
-                                                        <option>Customer Name</option>
-                                                        <option>Customer Email</option>
-                                                    </select>
-                                                </div>
-            
-                                                <div>
-                                                    <label><strong>Search By</strong></label>
-                                                    <select class="form-select">
-                                                        <option>All</option>
-                                                        <option>transactionID</option>
-                                                        <option>Merchant Reference</option>
-                                                        <option>Gateway Reference</option>
-                                                        <option>Merchant Name</option>
-                                                        <option>Customer Name</option>
-                                                        <option>Customer Email</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-            
-                                            <div>
-                                                <label for="inputAddress"><strong>Value</strong></label>
-                                                <input type="text" class="form-control" id="inputAddress"
-                                                    placeholder="Type here...">
-                                            </div>
-            
-                                            <div class="d-flex justify-content-end">
-                                                <a class="btn btn-warning btn-sm mt-3" href="">Clear</a>
-                                                <a class="btn btn-success btn-sm ms-1 mt-3" href="">Search</a>
-                                            </div>
-                                        </form>
-                                    </fieldset>
 
-                                    <fieldset class="form-fieldset">
+
+    <!-- Page holder -->
+
+    <div class="content ht-100v pd-0">
+     
+
+        <div class="content-body">
+          <div class="container pd-x-0 ">
+             <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
+              <div>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                    <li class="breadcrumb-item"><a href="../fe-flow.html">Dashboard</a></li>
+                    <li class="breadcrumb-item " aria-current="page">Merchant</li>
+                    <li class="breadcrumb-item active " aria-current="page">Merchant Refund</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+  
+            <!-- Main Content -->
+  
+            <div class="row row-xs">
+  
+              <!-- Col Card Col ID -->
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="tx-uppercase tx-11">Agent MaxiCashMe Transfer</p>
+  
+                    <div  class="rounded p-2"> 
+                      <label class="mb-2 tx-color-03  ">Date From</label>
+                      <div class="d-md-flex col-md-4  col-lg-4 ">
+                        <input type="date" class="form-control  form-group-sm   "  placeholder="" aria-label="Card number">
+                      </div>
+                      <label class="mb-2 tx-color-03 mt-3  ">Date To</label>
+                      <div class="d-md-flex col-md-4  col-lg-4  ">
+                        <input type="date" class="form-control   " placeholder="" aria-label="Card number">
+                      </div>
+                      <label class="mb-2 tx-color-03 mt-3  ">Display Name</label>
+                      <div class="d-md-flex  col-md-4  col-lg-4 ">
+                        <input type="text" class="form-control  form-group-sm "  placeholder="" aria-label="Card number">
+                      </div>
+  
+                      
+                      
+                     
+              
+                      
+                      <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
+                        <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15"><i data-feather="x" class="mg-r-5"></i> Clear</button>
+                        <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i data-feather="search" class="mg-r-5"></i> Search</button>
+                        
+                      </div>
+                      </div>
+                   
+                    
+                      
+                      
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <!-- End Card Col ID -->
+  
+              <div class="col-lg-12 col-xl-12 mg-t-10  ">
                 
-                                        <!-- button CSV(those will come from the datatable) -->
-                                        <div
-                                            class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 mg-b-5">
-                                            <div class="d-flex justify-content-start pl-4 mg-t-20">
-                                                <div class="flex-fill">
-                                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Print</button>
-                                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Excel</button>
-                                                </div>
-                                            </div>
+                <div class="card mg-b-10 ">
+
+  
+                  <!-- Files -->
+                  <div class="row row-xs">
+  
+                    <div class="col-lg-12">
+  
+                        <div class="card">
+  
+                            <div class="card-body">
+                                
+                                
+                                <div class="d-md-flex   justify-content-between tx-center ">
+                                     <div class="   mg-b-20 mg-lg-b-25 mg-xl-b-30">
+                                        <div class=" d-md-block ">
+                                            <button class="btn tx-center btn-sm pd-x-15 btn-danger btn-uppercase"><i data-feather="copy" class="wd-10 mg-r-5"></i> Copy</button>
+                                            <button class="btn tx-center btn-sm pd-x-15 btn-danger btn-uppercase mg-l-5"><i data-feather="file" class="wd-10 mg-r-5"></i> Excel</button>
+                                            <button class="btn tx-center btn-sm pd-x-15 btn-danger btn-uppercase mg-l-5"><i data-feather="download" class="wd-10 mg-r-5"></i> PDF</button>
+                                            
+                                          
                                         </div>
-                                        <!-- button CSV(those will come from the datatable) -->
-                
-                                        <!--tableContainer-->
-                                        <div class="table-responsive">
-                                            <table class="table table-dashboard mg-b-0">
-                
-                                                <table class="table table-hover table-dashboard mg-b-0 ">
+                           
+                                    </div>
+                                    
+                                <div class="d-flex tx-center justify-content-center  mg-b-20 mg-lg-b-25 mg-xl-b-30">
+                                  <label class=" tx-color-03 tx-center  mt-2 me-2">Filter Records</label>
+                                  <div class="d-flex">
+                                    
+                                    <input type="text" class="form-control  " placeholder="" aria-label="Filter Records">
+                                  </div>
+                                  
+                                
+                                </div>
+                                    
+                                </div>
+  
+  
+                            </div>
+  
+                        </div>
+  
+                    </div>
+  
+                    
+                  </div>
+  
+  
+                  <!-- End Files -->
+                  <div class="table-responsive p-3">
+                    
+                  
+                    <table class="table table-hover table-dashboard mg-b-0 ">
                                                     <thead style="background-color: rgba(244, 244, 244, 0.632);">
                                                         <tr>
                                                             <th scope="col">Action</th>
@@ -114,13 +148,87 @@
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                        </div><!--tableContainer-->
-                                        
-                                    </fieldset>
+  
+                   
+  
+                    
+                    
+                  </div><!-- table-responsive -->
+  
+  
+                  <!-- Pagination -->
+  
+                  <div class="row row-xs">
+  
+                      <div class="col-lg-12 ">
+  
+                          <div class="card">
+                      
+                              <div class="card-body">
+  
+                                <div class="tx-center">
+                                  <p class="tx-color-03" >*<span>Showing 1 to 10 of 9,488 entries</span>*</p>
+                              </div>
+                              
+                              <div class="mt-2 ">
+                                  <nav aria-label="Page navigation ">
+                                      <ul class="pagination pagination-circle pagination-sm justify-content-center ">
+                                        <li class="page-item disabled " ><a class="page-link page-link-icon" href="#"><i data-feather="chevron-left"></i></a></li>
+                                        <li class="page-item active  "><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item "><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link page-link-icon" href="#"><i data-feather="chevron-right"></i></a></li>
+                                      </ul>
+                                    </nav>
+                              </div>
+  
+                              
+  
+                              </div>
+  
+                          </div>
+  
+                      </div>
+  
+                      
+                    </div>
+  
+  
+                  <!-- End Pagination -->
+  
+               
+                 
+                      
+                    
+                </div><!-- card -->
+  
                 
-                                </div>
-                            </div>
-                        </div>
-                
-                    </div><!-- secondary container-->
-                </div><!-- full page content -->
+              </div><!-- col -->
+  
+  
+  
+            <!-- End Main Content -->
+    
+          </div>
+  
+          
+    
+    
+        </div>
+  
+       
+  
+        
+  
+  
+        <!-- End Path -->
+  
+  
+  
+  
+  
+  
+        <!--End  content-header -->
+  
+  
+     

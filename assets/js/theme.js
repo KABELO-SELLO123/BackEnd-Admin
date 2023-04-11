@@ -236,3 +236,42 @@ $("#MaxiCashMe").click(function(){
       
     });
   //--End POS --
+
+
+    //--Agents--
+    $("#AgentCard").click(function(){
+    
+      $("#PageLoadHere").load("AGENTS/AgentCard.html");
+      
+    });
+    $("#AgentList").click(function(){
+      
+      $("#PageLoadHere").load("AGENTS/AgentList.html");
+      
+    });
+    $("#CardReload").click(function(){
+      
+      $("#PageLoadHere").load("AGENTS/CardReloads.html");
+      
+    });
+    $("#CardSales").click(function(){
+      
+      $("#PageLoadHere").load("AGENTS/CardSales.html");
+      
+    });
+    $("#CardWithdrawals").click(function(){
+      
+      $("#PageLoadHere").load("AGENTS/CardWithdrawals.html");
+      
+    });
+    $("#CashPickUp").click(function(){
+      
+      $("#PageLoadHere").load("AGENTS/CashPickUp.html");
+      
+    });
+    $("#MaxiTrasnfer").click(function(){
+      
+      $("#PageLoadHere").load("AGENTS/MaxiCashMe-Tranfers.html");
+      
+    });
+    //--End Agents --
