@@ -1,74 +1,51 @@
-                <!-- full page content (main container) -->
-                <div class="content-body">
-                    <!-- secondary container-->
-                    <div class="container pd-x-0">
-                
-                        <!-- dashBoard/Fee structured (inside SC)-->
-                        <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
-                            <div>
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                                        <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
-                                        <li class="breadcrumb-item">Transaction</li>
-                                        <li class="breadcrumb-item active" aria-current="page">Pending Bank Payments</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-                        <!--dashBoard/Fee structured-->
-                
-                        <div class="content ht-100v pd-0">
-                            <div class="col-lg-12 col-xl-8 mg-t-10" style="width: 100%;">
-                                <div class="card mg-b-10">
-                
-                                    <!--fieldset container-->
-                                    <fieldset class="form-fieldset">
-                                        <!--fieldset legend-->
-                                        <legend>Merchant Settlements</legend>
-                                        <!--fieldset legend-->
-                                        <form class="form-fieldset">
+<div class="content ht-100v pd-0">
+    <div class="content-body">
+
+
+        <div class="container pd-x-0">
+
+            <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
+                <div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                            <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
+                            <li class="breadcrumb-item">Merchant</li>
+                            <li class="breadcrumb-item active" aria-current="page">Merchant Settlements
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+
+
+		 <fieldset class="form-control">
+              <legend>Merchant Settlements</legend>
+			                                        <form class="form-fieldset">
                                             <div class="form-row">
                                                 <div>
-                                                    <label><strong>Refund Status</strong></label>
+                                                    <label><strong>Settlement Status</strong></label>
                                                     <select class="form-select">
                                                         <option>All</option>
-                                                        <option>transactionID</option>
-                                                        <option>Merchant Reference</option>
-                                                        <option>Gateway Reference</option>
-                                                        <option>Merchant Name</option>
-                                                        <option>Customer Name</option>
-                                                        <option>Customer Email</option>
+                                                        <option>Completed</option>
+                                                        <option>Pending</option>
                                                     </select>
                                                 </div>
                                             </div>
             
-                                            <div class="d-flex justify-content-end">
-                                                <a class="btn btn-warning btn-sm mt-3" href="">Clear</a>
-                                                <a class="btn btn-success btn-sm ms-1 mt-3" href="">Search</a>
-                                            </div>
+                                               <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
+                        <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15"><i data-feather="x" class="mg-r-5"></i> Clear</button>
+                        <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i data-feather="search" class="mg-r-5"></i> Search</button>
+                        
+                      </div>
                                         </form>
-                                        </fieldset>
+			
+		</fieldset>
 
-                                        <fieldset class="form-fieldset">
-                                        
-                
-                                        <!-- button CSV(those will come from the datatable) -->
-                                        <div
-                                            class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 mg-b-5">
-                                            <div class="d-flex justify-content-start pl-4 mg-t-20">
-                                                <div class="flex-fill">
-                                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Print</button>
-                                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Excel</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- button CSV(those will come from the datatable) -->
-                
-                                        <!--tableContainer-->
-                                        <div class="table-responsive">
-                                            <table class="table table-dashboard mg-b-0">
-                
-                                                <table class="table table-hover table-dashboard mg-b-0 ">
+          <fieldset class="form-control">
+           
+
+                   <table class="table table-hover table-dashboard mg-b-0 ">
                                                     <thead style="background-color: rgba(244, 244, 244, 0.632);">
                                                         <tr>
                                                             <th scope="col">Action</th>
@@ -96,13 +73,11 @@
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                        </div><!--tableContainer-->
-                                        
-                                    </fieldset>
-                
-                                </div>
-                            </div>
-                        </div>
-                
-                    </div><!-- secondary container-->
-                </div><!-- full page content -->
+
+            </fieldset>
+
+        </div>
+
+
+    </div>
+</div>

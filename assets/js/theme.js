@@ -228,13 +228,55 @@ $("#MaxiCashMe").click(function(){
   //--End Merchants --
 
 
-  //---- Start Management -----
+
+    //-- POS --
+    $("#Device").click(function(){
+    
+      $("#PageLoadHere").load("POS/Devices-Page.html");
+      
+    });
+  //--End POS --
 
 
-  $("#userProfiles").click(function(){
+    //--Agents--
+    $("#AgentCard").click(function(){
     
-    $("#PageLoadHere").load("MANAGEMENT/user-profiles.html");
-    
+<<<<<<< HEAD
+      $("#PageLoadHere").load("AGENTS/AgentCard.html");
+      
+    });
+    $("#AgentList").click(function(){
+      
+      $("#PageLoadHere").load("AGENTS/AgentList.html");
+      
+    });
+    $("#CardReload").click(function(){
+      
+      $("#PageLoadHere").load("AGENTS/CardReloads.html");
+      
+    });
+    $("#CardSales").click(function(){
+      
+      $("#PageLoadHere").load("AGENTS/CardSales.html");
+      
+    });
+    $("#CardWithdrawals").click(function(){
+      
+      $("#PageLoadHere").load("AGENTS/CardWithdrawals.html");
+      
+    });
+    $("#CashPickUp").click(function(){
+      
+      $("#PageLoadHere").load("AGENTS/CashPickUp.html");
+      
+    });
+    $("#MaxiTrasnfer").click(function(){
+      
+      $("#PageLoadHere").load("AGENTS/MaxiCashMe-Tranfers.html");
+      
+    });
+    //--End Agents --
+=======
   });
 
   $("#last50RegisteredUsers").click(function(){
@@ -429,3 +471,4 @@ $("#MaxiCashMe").click(function(){
 
      //----End Maxicash Card -----
 
+>>>>>>> 99cf706e20e4b6952bfe31322effd09f3f49be45
