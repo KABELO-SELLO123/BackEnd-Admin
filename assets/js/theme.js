@@ -241,7 +241,7 @@ $("#MaxiCashMe").click(function(){
     //--Agents--
     $("#AgentCard").click(function(){
     
-<<<<<<< HEAD
+
       $("#PageLoadHere").load("AGENTS/AgentCard.html");
       
     });
@@ -276,8 +276,7 @@ $("#MaxiCashMe").click(function(){
       
     });
     //--End Agents --
-=======
-  });
+
 
   $("#last50RegisteredUsers").click(function(){
     
@@ -471,4 +470,4 @@ $("#MaxiCashMe").click(function(){
 
      //----End Maxicash Card -----
 
->>>>>>> 99cf706e20e4b6952bfe31322effd09f3f49be45
+
