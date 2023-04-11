@@ -418,4 +418,3 @@ $("#MaxiCashMe").click(function(){
 
      //----End Maxicash Card -----
 
-});
