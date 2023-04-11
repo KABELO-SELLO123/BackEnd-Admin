@@ -1,0 +1,182 @@
+
+    <div class="content ht-100v pd-0">
+     
+
+        <div class="content-body">
+          <div class="container pd-x-0 ">
+             <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
+              <div>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                    <li class="breadcrumb-item"><a href="../fe-flow.html">Dashboard</a></li>
+                    <li class="breadcrumb-item " aria-current="page">Maxicash Card</li>
+                    <li class="breadcrumb-item active " aria-current="page">Card Top Up Approval</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+  
+            <!-- Main Content -->
+
+                
+
+            <div class="col-lg-12 col-xl-12 mg-t-10 ">
+              
+                    <div class="card mg-b-10 ">
+                      <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Card Top Up Approval</p>
+      
+                      
+                      <div class="table-responsive p-3 ">
+                      
+                      
+                      
+                          <div data-label="Example" class="df-example demo-table ">
+                          <table id="example3" class="table rounded">
+                              <thead>
+                              <tr>
+                                  <th class="wd-20p">Name</th>
+                                  <th class="wd-25p">Position</th>
+                                  <th class="wd-20p">Office</th>
+                                  <th class="wd-15p">Age</th>
+                                  <th class="wd-20p">Salary</th>
+                              </tr>
+                              </thead>
+                          </table>
+                          </div><!-- df-example -->
+      
+                        
+                      </div><!-- table-responsive -->
+      
+      
+                     
+    
+                             
+                        
+                    </div>
+      
+                    
+             </div>
+  
+   
+
+                  
+         </div>
+
+            
+  
+    </div>
+        
+    
+    
+ </div>
+  
+  
+        
+  
+  
+  
+  
+   
+  
+  
+  
+  
+  
+        <!--End  content-header -->
+  
+  
+        <script src="../lib/jquery/jquery.min.js"></script>
+        <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../lib/feather-icons/feather.min.js"></script>
+        <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+        <script src="../lib/prismjs/prism.js"></script>
+        <script src="../lib/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+        <script src="../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+        <script src="../lib/select2/js/select2.min.js"></script>
+
+     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+     <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+     <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <script src="../../assets/js/dashforge.js"></script>
+
+
+
+
+    <script>
+        $(function(){
+          'use strict'
+  
+          $('#example1').DataTable({
+            language: {
+              searchPlaceholder: 'Search...',
+              sSearch: '',
+              lengthMenu: '_MENU_ items/page',
+            }
+          });
+          
+  
+          $('#example2').DataTable({
+            responsive: true,
+            language: {
+              searchPlaceholder: 'Search...',
+              sSearch: '',
+              lengthMenu: '_MENU_ items/page',
+            }
+
+          });
+  
+          $('#example3').DataTable({
+            'ajax': '../assets/data/datatable-arrays.txt',
+              dom: 'Bfrtip',
+              buttons: [
+              'excel',
+              'csv',
+              'pdf'
+            ],
+            language: {
+              searchPlaceholder: 'Search...',
+              sSearch: '',
+              lengthMenu: '_MENU_ items/page',
+              
+             
+            }
+            
+            
+          });
+         
+  
+          $('#example4').DataTable({
+            'ajax': '../assets/data/datatable-objects.txt',
+            "columns": [
+              { "data": "name" },
+              { "data": "position" },
+              { "data": "office" },
+              { "data": "extn" },
+              { "data": "salary" }
+            ],
+            language: {
+              searchPlaceholder: 'Search...',
+              sSearch: '',
+              lengthMenu: '_MENU_ items/page',
+            }
+          });
+  
+          // Select2
+          $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
+  
+        });
+
+        
+
+
+      </script>
+        
+        
+       
+  

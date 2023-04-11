@@ -42645,3 +42645,32 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
 
 .wd-280 {
   width: 280px; }
+
+
+
+button.dt-button  {
+    border-radius: 2px;
+    color: #fff;
+    background:  #dc3545;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+}
+button.dt-button:hover:not(.disabled){
+
+  border-radius: 2px;
+  color: white;
+  background: red;
+  border-radius: 3px;
+  outline: none !important;
+  border-color: none;
+  border: none;
+  font-family: 'IBM Plex Sans';
+  width: 70px;
+  
+
+}
+

@@ -290,6 +290,29 @@ $(document).ready(function(){
      //----End Payments -----
 
 
+     //----Start Maxicash Card -----
+
+     $("#cardApproval").click(function(){
+    
+      $("#PageLoadHere").load("MAXICASH-CARD/Card-Approval.html");
+      
+    });
+
+
+    $("#cardTopUpApproval").click(function(){
+    
+      $("#PageLoadHere").load("MAXICASH-CARD/Card-Top-Up-Approval.html");
+      
+    });
+
+
+     //----End Maxicash Card -----
+
+
+
+
+
+
 
 
 
