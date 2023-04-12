@@ -277,7 +277,7 @@ $("#MaxiCashMe").click(function(){
 
 
     
-     //--Banks --
+     //--Settings --
 $("#Banks").click(function(){
       
       $("#PageLoadHere").load("SETTINGS/Banks.html");
@@ -298,5 +298,22 @@ $("#Banks").click(function(){
       $("#PageLoadHere").load("SETTINGS/MobilePayments.html");
       
     });
+
+    $("#MobileMoney").click(function(){
+      
+      $("#PageLoadHere").load("SETTINGS/MobileMoney.html");
+      
+    });
+    $("#Retail").click(function(){
+      
+      $("#PageLoadHere").load("SETTINGS/RetailsProvider.html");
+      
+    });
+    $("#Provider").click(function(){
+      
+      $("#PageLoadHere").load("SETTINGS/NetworkProvider.html");
+      
+    });
+
     
-     //--End Banks --
+     //--End Settings --
