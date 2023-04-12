@@ -240,8 +240,6 @@ $("#MaxiCashMe").click(function(){
 
     //--Agents--
     $("#AgentCard").click(function(){
-    
-
       $("#PageLoadHere").load("AGENTS/AgentCard.html");
       
     });
@@ -278,8 +276,6 @@ $("#MaxiCashMe").click(function(){
     //--End Agents --
 
 
-     //---- Start Management -----
-
   $("#last50RegisteredUsers").click(function(){
     
     $("#PageLoadHere").load("MANAGEMENT/last-50-registerd-users.html");
@@ -312,16 +308,6 @@ $("#MaxiCashMe").click(function(){
     
   });
 
-  $("#userProfiles").click(function(){
-    
-    $("#PageLoadHere").load("MANAGEMENT/user-profiles.html");
-    
-  });
-
-
-
-
-  
 
   //---- End Management -----
 
@@ -391,89 +377,28 @@ $("#MaxiCashMe").click(function(){
     
       $("#PageLoadHere").load("CARD-SALES/card-stock.html");
       
-    });
-
-
-    $("#cardHistory").click(function(){
-    
-      $("#PageLoadHere").load("CARD-SALES/card-history.html");
+      $("#PageLoadHere").load("SETTINGS/Banks.html");
       
     });
-
-
-
-
-    //---- End Card Sales -----
-
-
-    //---- Start POS -----
-
-    $("#posbtn").click(function(){
-    
-      $("#PageLoadHere").load("POS/Pos-page.html");
+    $("#Currency").click(function(){
+      
+      $("#PageLoadHere").load("SETTINGS/Currencies.html");
       
     });
-
-
-    //---- End POS -----
-
-
-
-    //---- Start Users  -----
-
-
-    $("#createUserAccount").click(function(){
-    
-      $("#PageLoadHere").load("USERS/create-user-account.html");
+    $("#Airtime").click(function(){
+      
+      $("#PageLoadHere").load("SETTINGS/Airtime-Products.html");
       
     });
-
-    
-    $("#UploadBulkUsers").click(function(){
-    
-      $("#PageLoadHere").load("USERS/upload-bulk-users.html");
+    $("#MobilePayments").click(function(){
+      
+      $("#PageLoadHere").load("SETTINGS/MobilePayments.html");
       
     });
-
-
-
-
-    //---- End Users -----
-
-     //----Start Payments -----
-
-     $("#uploadBulkPayments").click(function(){
-    
-      $("#PageLoadHere").load("PAYMENTS/Upload-Bulk-Payment.html");
-      
-    });
-
-
-
-     //----End Payments -----
-
-
-     //----Start Maxicash Card -----
-
-     $("#cardApproval").click(function(){
-    
-      $("#PageLoadHere").load("MAXICASH-CARD/Card-Approval.html");
-      
-    });
-
-
-    $("#cardTopUpApproval").click(function(){
-    
-      $("#PageLoadHere").load("MAXICASH-CARD/Card-Top-Up-Approval.html");
-      
-    });
-
-    $("#topUpCardForMerchant").click(function(){
     
       $("#PageLoadHere").load("MAXICASH-CARD/top-up-card-for-merchant.html");
       
     });
-
     $("#appCardOrders").click(function(){
     
       $("#PageLoadHere").load("MAXICASH-CARD/app-card-orders.html");
@@ -482,16 +407,5 @@ $("#MaxiCashMe").click(function(){
     
 
      //----End Maxicash Card -----
-
-    //----Start Monitoring -----
-
-    $("#FraudulentAccount").click(function(){
-    
-      $("#PageLoadHere").load("MONITORING/Fraudulent-Account.html");
-      
-    });
-
-
-     //----End Monitoring -----
 
 
