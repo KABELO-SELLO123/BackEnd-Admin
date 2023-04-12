@@ -1,6 +1,3 @@
-
-
-
 <style>
     button.dt-button  {
       border-radius: 2px;
@@ -34,6 +31,7 @@
   }
   </style>
 
+
 <div class="content ht-100v pd-0">
     <div class="content-body">
 
@@ -46,7 +44,7 @@
                         <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                             <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
                             <li class="breadcrumb-item">Settings</li>
-                            <li class="breadcrumb-item active" aria-current="page">Banks
+                            <li class="breadcrumb-item active" aria-current="page">Mobile Payments
                             </li>
                         </ol>
                     </nav>
@@ -58,10 +56,10 @@
 
 
             <fieldset class="form-control">
-                <legend class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Currencies List</legend>
+                <legend>mobile Payments List</legend>
                 <div class="mb-3">
-                    <button href="#createAirtime" data-bs-toggle="modal"
-                        class="btn  tx-l btn-sm btn-primary btn-uppercase pd-x-15 "><i data-feather="check-circle"></i>Manage Per Category Name</button>
+                    <button href="#createBank" data-bs-toggle="modal"
+                        class="btn  tx-l btn-sm btn-success btn-uppercase pd-x-15 "><i data-feather="check-circle"></i>Manage Per Category Name</button>
                 </div>
 
                 <div data-label="Example" class="df-example demo-table ">
@@ -76,7 +74,7 @@
                         </tr>
                     </thead>
                    </table>
-               </div>
+                </div>
 
             </fieldset>
 
@@ -87,7 +85,7 @@
 
 
 
-        <div class="modal fade modal-xl " id="createAirtime" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal fade modal-xl " id="createBank" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered " role="document">
               <div class="modal-content ">
                 <div class="modal-body">
@@ -96,7 +94,7 @@
                   </a>
           
           
-                  <p class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Currencies Details</p>
+                  <p class="tx-left tx-color-03 tx-spacing-3">Mobile Payment Details</p>
           
                   <div class="card-body ">
           
@@ -107,18 +105,17 @@
           
                         <div class="rounded p-2">
           
-                          <label class="mb-2 tx-color-03  ">Header</label>
+                          <label class="mb-2 tx-color-03  ">Mobile Payment</label>
                           <div class="form-group">
-                            <input type="text" class="form-control  form-group-sm " placeholder="" aria-label="Card number">
+                            <input type="text" class="form-control  form-group-sm " placeholder="Mobile Payment" aria-label="Card number">
                           </div>
-                          <label class="mb-2 tx-color-03  ">Price</label>
+                          <label class="mb-2 tx-color-03  ">Internal Code</label>
                           <div class="form-group">
-                            <input type="text" class="form-control  form-group-sm " placeholder="" aria-label="Card number">
+                            <input type="text" class="form-control  form-group-sm " placeholder="Internal Code" aria-label="Card number">
                           </div>
                           <label class="mb-2 tx-color-03   ">Country</label>
                           <div class="form-group">
                             <select name="" id="" class="form-control">
-                              <option value="">Select Country</option>
                               <option value="">Algeria</option>
                               <option value="">Angola</option>
                               <option value="">Argentina</option>
@@ -128,45 +125,36 @@
                               <option value="">Bolivia</option>
                             </select>
                           </div>
-                          <label class="mb-2 tx-color-03">Document Type</label>
+                          <label class="mb-2 tx-color-03   ">Currency</label>
                           <div class="form-group">
                             <select name="" id="" class="form-control">
-                              <option value="">(Please select a type)</option>
-                              <option value="">Airtime</option>
-                              <option value="">Data Bundle</option>
-                              <option value="">transferTo</option>
+                              <option value="">maxiKwanza</option>
+                              <option value="">maxiPound</option>
+                              <option value="">maxiDollar</option>
+                              <option value="">maxiRand</option>
+                              <option value="">maxiEuro</option>
                             </select>
                           </div>
-                          <label class="mb-2 tx-color-03  ">Integration Code</label>
-                          <div class="form-group">
-                            <input type="text" class="form-control  form-group-sm " placeholder="Real Currency" aria-label="Card number">
-                          </div>
-                          <label class="mb-2 tx-color-03   ">Country</label>
-                          <div class="form-group">
-                            <select name="" id="" class="form-control">
-                              <option value="">Glo Mobile Nigeria Internet</option>
-                              <option value="">Airtel Nigeria</option>
-                              <option value="">Mtn Nigeria</option>
-                            </select>
-                          </div>
-                          
+          
                         </div>
           
                       </div>
           
                     </div>
           
+                    <label for=""><a>
+                        <input id="" type="checkbox" required name="" class="inline" />
+                        Activate Mobile Payment</a>
+                      </label>
+
                     <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
                       <button class="btn tx-center btn-sm btn-primary pd-x-15"><i data-feather="save" class="mg-r-5"></i>
                         Save</button>
+          
                       <button class="btn tx-center btn-sm btn-light pd-x-15"><i data-feather="save" class="mg-r-5"></i>
                         Close</button>
                     </div>
           
-                    <label for=""><a>
-                        <input id="" type="checkbox" required name="" class="inline" />
-                        Enable Airtime Product</a>
-                      </label>
                   </div>
           
                 </div>
@@ -179,42 +167,33 @@
     </div>
 </div>
 
-<script src="../../assets/js/dashforge.js"></script>
+<script>
+    $(function(){
+      'use strict'
 
-
-
-
-    <script>
-        $(function(){
-          'use strict'
-
-      
-          $('#example3').DataTable({
-            'ajax': '../assets/data/datatable-arrays.txt',
-              dom: 'Bfrtip',
-              buttons: [
-              'copy',
-              'excel',
-              'pdf'
-            ],
-            language: {
-              searchPlaceholder: 'Search...',
-              sSearch: '',
-              lengthMenu: '_MENU_ items/page',
-              
-             
-            }
-            
-          });
-        
-       
-        });
-
-        
-
-
-      </script>
-        
-        
-       
   
+      $('#example3').DataTable({
+        'ajax': '../assets/data/datatable-arrays.txt',
+          dom: 'Bfrtip',
+          buttons: [
+          'copy',
+          'excel',
+          'pdf'
+        ],
+        language: {
+          searchPlaceholder: 'Search...',
+          sSearch: '',
+          lengthMenu: '_MENU_ items/page',
+          
+         
+        }
+        
+      });
+    
+   
+    });
+
+    
+
+
+  </script>

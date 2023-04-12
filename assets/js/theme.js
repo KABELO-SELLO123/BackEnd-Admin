@@ -291,4 +291,10 @@ $("#Banks").click(function(){
       $("#PageLoadHere").load("SETTINGS/Airtime-Products.html");
       
     });
+    $("#MobilePayments").click(function(){
+      
+      $("#PageLoadHere").load("SETTINGS/MobilePayments.html");
+      
+    });
+    
      //--End Banks --
