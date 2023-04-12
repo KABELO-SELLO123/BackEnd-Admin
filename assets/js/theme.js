@@ -278,6 +278,8 @@ $("#MaxiCashMe").click(function(){
     //--End Agents --
 
 
+     //---- Start Management -----
+
   $("#last50RegisteredUsers").click(function(){
     
     $("#PageLoadHere").load("MANAGEMENT/last-50-registerd-users.html");
@@ -310,6 +312,16 @@ $("#MaxiCashMe").click(function(){
     
   });
 
+  $("#userProfiles").click(function(){
+    
+    $("#PageLoadHere").load("MANAGEMENT/user-profiles.html");
+    
+  });
+
+
+
+
+  
 
   //---- End Management -----
 
@@ -461,6 +473,7 @@ $("#MaxiCashMe").click(function(){
       $("#PageLoadHere").load("MAXICASH-CARD/top-up-card-for-merchant.html");
       
     });
+
     $("#appCardOrders").click(function(){
     
       $("#PageLoadHere").load("MAXICASH-CARD/app-card-orders.html");
@@ -469,5 +482,16 @@ $("#MaxiCashMe").click(function(){
     
 
      //----End Maxicash Card -----
+
+    //----Start Monitoring -----
+
+    $("#FraudulentAccount").click(function(){
+    
+      $("#PageLoadHere").load("MONITORING/Fraudulent-Account.html");
+      
+    });
+
+
+     //----End Monitoring -----
 
 
