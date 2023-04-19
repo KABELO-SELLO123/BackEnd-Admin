@@ -1,24 +1,22 @@
-
-
-
 <style>
-    button.dt-button  {
-      border-radius: 2px;
-      color: #fff;
-      background:  #0168fa;
-      border-radius: 3px;
-      outline: none !important;
-      border-color: none;
-      border: none;
-      font-family: 'IBM Plex Sans';
-      width: 70px;
-  
-  
-    
-     
+  button.dt-button {
+    border-radius: 2px;
+    color: #fff;
+    background: #8b8d91;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+
+
+
+
   }
-  button.dt-button:hover:not(.disabled){
-  
+
+  button.dt-button:hover:not(.disabled) {
+
     border-radius: 2px;
     color: #fff;
     background: #dc3545;
@@ -29,10 +27,11 @@
     font-family: 'IBM Plex Sans';
     width: 70px;
     outline: none;
-    
-  
+
+
   }
-  </style>
+</style>
+  
 
 <div class="content ht-100v pd-0">
     <div class="content-body">
@@ -46,7 +45,7 @@
                         <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                             <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
                             <li class="breadcrumb-item">Settings</li>
-                            <li class="breadcrumb-item active" aria-current="page">Banks
+                            <li class="breadcrumb-item active" aria-current="page">Airtime Products Details
                             </li>
                         </ol>
                     </nav>
@@ -58,10 +57,10 @@
 
 
             <fieldset class="form-control">
-                <legend class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Currencies List</legend>
+                <legend class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Airtime Product List</legend>
                 <div class="mb-3">
                     <button href="#createAirtime" data-bs-toggle="modal"
-                        class="btn  tx-l btn-sm btn-primary btn-uppercase pd-x-15 "><i data-feather="check-circle"></i>Manage Per Category Name</button>
+                        class="btn  tx-l btn-sm btn-primary active btn-uppercase pd-x-15 "><i data-feather="check-circle"></i>Create Airtime Product</button>
                 </div>
 
                 <div data-label="Example" class="df-example demo-table ">
@@ -96,7 +95,7 @@
                   </a>
           
           
-                  <p class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Currencies Details</p>
+                  <p class="tx-uppercase tx-11 tx-spacing-1 tx-color-02 tx-semibold mg-b-8">Airtime Products Details</p>
           
                   <div class="card-body ">
           
@@ -128,20 +127,41 @@
                               <option value="">Bolivia</option>
                             </select>
                           </div>
+                          <label class="mb-2 tx-color-03">Currency</label>
+                          <div class="form-group">
+                            <select name="" id="" class="form-control">
+                              <option value="">maxiKwanza</option>
+                              <option value="">maxiPound</option>
+                              <option value="">maxiDollar</option>
+                              <option value="">maxiRand</option>
+                              <option value="">maxiEuro</option>
+                            </select>
+                          </div>
                           <label class="mb-2 tx-color-03">Document Type</label>
                           <div class="form-group">
                             <select name="" id="" class="form-control">
                               <option value="">(Please select a type)</option>
                               <option value="">Airtime</option>
                               <option value="">Data Bundle</option>
-                              <option value="">transferTo</option>
+                              <option value="">TransferTo</option>
+                              
                             </select>
                           </div>
                           <label class="mb-2 tx-color-03  ">Integration Code</label>
                           <div class="form-group">
-                            <input type="text" class="form-control  form-group-sm " placeholder="Real Currency" aria-label="Card number">
+                            <input type="text" class="form-control  form-group-sm " placeholder="" aria-label="Card number">
                           </div>
-                          <label class="mb-2 tx-color-03   ">Country</label>
+                          <label class="mb-2 tx-color-03">Currency</label>
+                          <div class="form-group">
+                            <select name="" id="" class="form-control">
+                              <option value="">maxiKwanza</option>
+                              <option value="">maxiPound</option>
+                              <option value="">maxiDollar</option>
+                              <option value="">maxiRand</option>
+                              <option value="">maxiEuro</option>
+                            </select>
+                          </div>
+                          <label class="mb-2 tx-color-03   ">Network Provider</label>
                           <div class="form-group">
                             <select name="" id="" class="form-control">
                               <option value="">Glo Mobile Nigeria Internet</option>
@@ -149,7 +169,10 @@
                               <option value="">Mtn Nigeria</option>
                             </select>
                           </div>
-                          
+                          <label for=""><a>
+                            <input id="" type="checkbox" required name="" class="inline" />
+                            Enable Airtime Product</a>
+                          </label>
                         </div>
           
                       </div>
@@ -163,10 +186,7 @@
                         Close</button>
                     </div>
           
-                    <label for=""><a>
-                        <input id="" type="checkbox" required name="" class="inline" />
-                        Enable Airtime Product</a>
-                      </label>
+                   
                   </div>
           
                 </div>

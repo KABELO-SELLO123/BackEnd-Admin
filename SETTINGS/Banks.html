@@ -1,163 +1,187 @@
+<style>
+  button.dt-button {
+    border-radius: 2px;
+    color: #fff;
+    background: #8b8d91;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+
+
+
+
+  }
+
+  button.dt-button:hover:not(.disabled) {
+
+    border-radius: 2px;
+    color: #fff;
+    background: #dc3545;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+    outline: none;
+
+
+  }
+</style>
+  
+
+
+
+
 <div class="content ht-100v pd-0">
-    <div class="content-body">
+  <div class="content-body">
+    <div class="container pd-x-0 ">
+
+       <!--breadCrumbs -->
+       <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
+        <div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                    <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
+                    <li class="breadcrumb-item">Settings</li>
+                    <li class="breadcrumb-item active" aria-current="page">Banks
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+      <!--breadCrumbs -->
 
 
-        <div class="container pd-x-0">
+      <!--section container-->
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body form-control">
+            <p class="tx-center tx-uppercase tx-12">Banks List</p>
+            <div>
+              <button href="#createBank" data-bs-toggle="modal"
+                  class="btn  tx-l btn-sm btn-primary btn-uppercase mg-b-10"><i data-feather="check-circle"></i>Create Bank</button>
+           </div>
+           <table id="example3" class="table rounded mt-4">
+            <thead style="background-color: rgba(244, 244, 244, 0.632);">
+                <tr>
+                    <th class="wd-20p">Name</th>
+                    <th class="wd-25p">Position</th>
+                    <th class="wd-20p">Office</th>
+                    <th class="wd-15p">Age</th>
+                    <th class="wd-20p">Salary</th>
 
-            <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
-                <div>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                            <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
-                            <li class="breadcrumb-item">Settings</li>
-                            <li class="breadcrumb-item active" aria-current="page">Banks
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
+                </tr>
+            </thead>
+        </table>
+
+
+          </div>
+        </div>
+      </div>
+      <!--section container-->
+
+
+      
+      
+<div class="modal fade" id="createBank" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered " role="document">
+    <div class="modal-content">
+      <div class="modal-body ">
+        <a href="#" role="button" class="close pos-absolute t-15 r-15" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </a>
+
+
+        <p class="tx-center tx-uppercase  tx-color-03 tx-spacing-3">Country Details</p>
+
+        <div class="card-body">
+          <div class="rounded p-2">
+            <label class="mb-2 tx-color-03"><strong>Bank Name</strong></label>
+            <div class="form-group">
+              <input type="text" class="form-control  form-group-sm " placeholder="Bank Name"
+                aria-label="Card number">
+            </div>
+            <label class="mb-2 tx-color-03   ">Country</label>
+            <div class="form-group">
+              <select name="" id="" class="form-control">
+                <option value="">Algeria</option>
+                <option value="">Angola</option>
+                <option value="">Argentina</option>
+                <option value="">Australia</option>
+                <option value="">Belguim</option>
+                <option value="">Benin</option>
+                <option value="">Bolivia</option>
+              </select>
             </div>
 
 
+            <label class="mb-2 tx-color-03   ">Currency</label>
+            <div class="form-group">
+              <select name="" id="" class="form-control">
+                <option value="">maxiKwanza</option>
+                <option value="">maxiPound</option>
+                <option value="">maxiDollar</option>
+                <option value="">maxiRand</option>
+                <option value="">maxiEuro</option>
+              </select>
+            </div>
 
+            <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
+              <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15"><i data-feather="x"
+                  class="mg-r-5"></i> Close</button>
+              <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i
+                  data-feather="save" class="mg-r-5"></i> Save</button>
 
-
-            <fieldset class="form-control">
-                <legend>Banks List</legend>
-                <div>
-                    <button href="#createBank" data-bs-toggle="modal"
-                        class="btn  tx-l btn-sm btn-success btn-uppercase pd-x-15 "><i data-feather="check-circle"></i>Manage Per Category Name</button>
-                </div>
-                <table class="table table-hover table-dashboard mg-b-0 mt-4">
-                    <thead style="background-color: rgba(244, 244, 244, 0.632);">
-                        <tr>
-                            <th scope="col">Action</th>
-                            <th scope="col">Bank Name</th>
-                            <th scope="col">Country</th>
-                            <th scope="col">Created At</th>
-                            <th scope="col">Modified At</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">
-                                <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                                  <button type="button" class="btn btn-success btn-sm mt-2"><i
-                                      data-feather="check-circle"></i>View details</button>
-                                </div>
-                              </th>
-                            <td>Investec</td>
-                            <td>South Africa</td>
-                            <td>2017-07-31T13:50:14.288Z</td>
-                            <td>2017-07-31T16:33:53.919Z</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                                  <button type="button" class="btn btn-success btn-sm mt-2"><i
-                                      data-feather="check-circle"></i>View details</button>
-                                </div>
-                              </th>
-                            <td>Bidvest</td>
-                            <td>South Africa</td>
-                            <td>2017-01-07T20:38:18.139Z</td>
-                            <td>2017-01-07T20:38:18.139Z</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                                  <button type="button" class="btn btn-success btn-sm mt-2"><i
-                                      data-feather="check-circle"></i>View details</button>
-                                </div>
-                              </th>
-                            <td>RMB</td>
-                            <td>South Africa</td>
-                            <td>2017-03-29T12:21:39.821Z</td>
-                            <td>2017-07-31T16:34:15.059Z</td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-
-
-            </fieldset>
-
-
-            
-
-        </div>
-
-
-
-        <div class="modal fade modal-xl " id="createBank" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered " role="document">
-              <div class="modal-content ">
-                <div class="modal-body">
-                  <a href="#" role="button" class="close pos-absolute t-15 r-15" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </a>
-          
-          
-                  <p class="tx-left tx-color-03 tx-spacing-3">Banks Details</p>
-          
-                  <div class="card-body ">
-          
-          
-                    <div class="row">
-          
-                      <div class="col-6">
-          
-                        <div class="rounded p-2">
-          
-                          <label class="mb-2 tx-color-03  ">Bank Name</label>
-                          <div class="form-group">
-                            <input type="text" class="form-control  form-group-sm " placeholder="Owner" aria-label="Card number">
-                          </div>
-                          <label class="mb-2 tx-color-03   ">Country</label>
-                          <div class="form-group">
-                            <select name="" id="" class="form-control">
-                              <option value="">Select Country</option>
-                              <option value="">Algeria</option>
-                              <option value="">Angola</option>
-                              <option value="">Argentina</option>
-                              <option value="">Australia</option>
-                              <option value="">Belguim</option>
-                              <option value="">Benin</option>
-                              <option value="">Bolivia</option>
-                            </select>
-                          </div>
-                          <label class="mb-2 tx-color-03   ">Currency</label>
-                          <div class="form-group">
-                            <select name="" id="" class="form-control">
-                              <option value="">maxiKwanza</option>
-                              <option value="">maxiPound</option>
-                              <option value="">maxiDollar</option>
-                              <option value="">maxiRand</option>
-                              <option value="">maxiEuro</option>
-                            </select>
-                          </div>
-          
-                        </div>
-          
-                      </div>
-          
-                    </div>
-          
-                    <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
-                      <button class="btn tx-center btn-sm btn-primary pd-x-15"><i data-feather="save" class="mg-r-5"></i>
-                        Save</button>
-          
-                      <button class="btn tx-center btn-sm btn-light pd-x-15"><i data-feather="save" class="mg-r-5"></i>
-                        Close</button>
-                    </div>
-          
-                  </div>
-          
-                </div>
-              </div>
             </div>
           </div>
 
+        </div>
 
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- TopUp addcountry -->
 
     </div>
+  </div>
 </div>
+
+
+  <script src="../../assets/js/dashforge.js"></script>
+
+
+
+  <script>
+    $(function () {
+      'use strict'
+
+
+      $('#example3').DataTable({
+        'ajax': '../assets/data/datatable-arrays.txt',
+        dom: 'Bfrtip',
+        buttons: [
+          'copy',
+          'excel',
+          'pdf'
+        ],
+        language: {
+          searchPlaceholder: 'Search...',
+          sSearch: '',
+          lengthMenu: '_MENU_ items/page',
+
+
+        }
+
+      });
+
+
+    });
+  </script>

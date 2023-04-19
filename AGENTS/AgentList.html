@@ -1,137 +1,96 @@
+<style>
+  button.dt-button {
+    border-radius: 2px;
+    color: #fff;
+    background: #8b8d91;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+
+
+
+
+  }
+
+  button.dt-button:hover:not(.disabled) {
+
+    border-radius: 2px;
+    color: #fff;
+    background: #dc3545;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+    outline: none;
+
+
+  }
+</style>
+
+
+
+
+
 <div class="content ht-100v pd-0">
   <div class="content-body">
+    <div class="container pd-x-0 ">
 
-    <div class="container pd-x-0">
-
-      <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
+       <!--breadCrumbs -->
+       <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
         <div>
           <nav aria-label="breadcrumb">
-            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-              <li class="breadcrumb-item">
-                <a href="../fe-flow.html">Dashboard</a>
-              </li>
-              <li class="breadcrumb-item" aria-current="page">Agents</li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Agent List
-              </li>
-            </ol>
+              <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                  <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
+                  <li class="breadcrumb-item">Agents</li>
+                  <li class="breadcrumb-item active" aria-current="page">Agent List
+                  </li>
+              </ol>
           </nav>
-        </div>
       </div>
-
-      <!-- Main Content -->
-
-
-
-      <div class="col-lg-12 col-xl-12 mg-t-10">
-        <div class="card mg-b-10">
-          <fieldset class="form-control">
-            <legend> Agent List</legend>
-
-            <div class="d-flex justify-content-center pl-4 mg-t-20">
-              <button href="#addAgent" data-bs-toggle="modal"
-                class="btn  tx-l btn-sm btn-primary btn-uppercase pd-x-15 "><i data-feather="plus"></i>Create
-                Agent</button>
-            </div>
+    </div>
+      <!--breadCrumbs -->
 
 
-            <div class="table-responsive p-3">
-              <table class="table table-dashboard mg-b-30">
-                <thead>
-                  <tr>
-                    <th class="text-right">Action</th>
-                    <th class="text-right">Agent Name</th>
-                    <th class="text-right">Contact Name</th>
-                    <th class="text-right">Phone Number</th>
-                    <th class="text-right">Country</th>
-                    <th class="text-right">Town</th>
-                    <th class="text-right">Suburb</th>
-                    <th class="text-right">Address</th>
-                    <th class="text-right">GPS Coordinate</th>
-                    <th class="text-right">Created At</th>
-                    <th class="text-right">Modified At</th>
-                    <th class="text-right">Owner</th>
-                    <th class="text-right">Merchant</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">
-                      <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-success btn-sm mt-2"><i
-                            data-feather="check-circle"></i>Manage</button>
-                      </div>
-                    </th>
-                    <td class="text-right tx-medium">SMILE SHOP</td>
-                    <td class="text-right tx-medium">MUZINGA BIZUA</td>
-                    <td class="text-right tx-medium">243900604225</td>
-                    <td class="text-right tx-medium">DR Congo</td>
-                    <td class="text-right tx-medium">Kinshasa</td>
-                    <td class="text-right tx-medium">Barumbu(Bon Marche)</td>
-                    <td class="text-right tx-medium">Av.Echevin/01 Baraumbu Bon Marche</td>
-                    <td class="text-right tx-medium">-4.32087,15.32653</td>
-                    <td class="text-right tx-medium"></td>
-                    <td class="text-right tx-medium">3/17/2021 2:02:06 PM</td>
-                    <td class="text-right tx-medium">claude</td>
-                    <td class="text-right tx-medium">Shop Smile</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-success btn-sm mt-2"><i
-                            data-feather="check-circle"></i>Manage</button>
-                      </div>
-                    </th>
-                    <td class="text-right tx-medium">MAXICASH OFFICE</td>
-                    <td class="text-right tx-medium">ALDACHANTY</td>
-                    <td class="text-right tx-medium">243898697880</td>
-                    <td class="text-right tx-medium">DR Congo</td>
-                    <td class="text-right tx-medium">Kinshasa</td>
-                    <td class="text-right tx-medium">Gombe</td>
-                    <td class="text-right tx-medium">Immeuble Kavali Center, 3e Niveau Local 3-3-1, Avenue Mutombo
-                      Katshi n* 10/13</td>
-                    <td class="text-right tx-medium">-4.302593,15.310179</td>
-                    <td class="text-right tx-medium"></td>
-                    <td class="text-right tx-medium">11/17/2021 11:52:29 AM</td>
-                    <td class="text-right tx-medium"></td>
-                    <td class="text-right tx-medium">MaxiCash Gombe</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-success btn-sm mt-2"><i
-                            data-feather="check-circle"></i>Manage</button>
-                      </div>
-                    </th>
-                    <td class="text-right tx-medium">Daemasol</td>
-                    <td class="text-right tx-medium">Cathy Kanika</td>
-                    <td class="text-right tx-medium">243817608543</td>
-                    <td class="text-right tx-medium">DR Congo</td>
-                    <td class="text-right tx-medium">Kinshasa</td>
-                    <td class="text-right tx-medium">Ngaliema</td>
-                    <td class="text-right tx-medium">Av.Azapaka N*15</td>
-                    <td class="text-right tx-medium">-4.37275,15.25056</td>
-                    <td class="text-right tx-medium">11/18/2020 4:18:45 PM</td>
-                    <td class="text-right tx-medium">2/18/2021 12:06:42 PM</td>
-                    <td class="text-right tx-medium">claude</td>
-                    <td class="text-right tx-medium">Daemasol</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div><!-- table-responsive -->
+            <!--section container-->
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body form-control">
+                  <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Agent List</p>
+               
+                  <div>
+                    <button href="#addAgent" data-bs-toggle="modal"
+                      class="btn  tx-l btn-sm btn-success active btn-uppercase pd-x-15 mg-b-10"><i data-feather="plus"></i> Create
+                      Agent</button>
+                  </div>
 
+                  <table id="example3" class="table rounded mt-4">
+                    <thead style="background-color: rgba(244, 244, 244, 0.632);">
+                        <tr>
+                            <th class="wd-20p">Name</th>
+                            <th class="wd-25p">Position</th>
+                            <th class="wd-20p">Office</th>
+                            <th class="wd-15p">Age</th>
+                            <th class="wd-20p">Salary</th>
 
-          </fieldset>
-        </div><!-- card -->
-      </div><!-- End Card Col ID -->
-    </div><!-- col -->
-  </div><!-- End Table -->
-</div><!-- End Main Content -->
+                        </tr>
+                    </thead>
+                </table>
+
+                  </div>
+                </div>
+              </div>
+            
+              <!--section container-->
 
 
 
-
-
+       <!-- TopUp -->
+       
 
 <div class="modal fade modal-xl " id="addAgent" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered " role="document">
@@ -251,11 +210,10 @@
 
           </div>
 
-          <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
-            <button class="btn tx-center btn-sm btn-primary pd-x-15"><i data-feather="save" class="mg-r-5"></i>
+          <div class="d-flex flex-column flex-sm-row mg-t-10 mg-md-t-0 mt-2 justify-content-end">
+            <button class="btn tx-center btn-sm btn-primary active mg-r-5"><i data-feather="save" class="mg-r-5"></i>
               Save</button>
-
-            <button class="btn tx-center btn-sm btn-light pd-x-15"><i data-feather="save" class="mg-r-5"></i>
+            <button class="btn tx-center btn-sm btn-light active pd-x-15"><i data-feather="exit" class="mg-r-5"></i>
               Close</button>
           </div>
 
@@ -266,8 +224,43 @@
   </div><!-- modal-content -->
 </div><!-- modal-dialog -->
 <!--topUp add new player-->
+      
+    
+      <!-- TopUp  -->
 
 
-
+    </div>
+  </div>
 </div>
-</div>
+
+
+  <script src="../../assets/js/dashforge.js"></script>
+
+
+
+  <script>
+    $(function () {
+      'use strict'
+
+
+      $('#example3').DataTable({
+        'ajax': '../assets/data/datatable-arrays.txt',
+        dom: 'Bfrtip',
+        buttons: [
+          'copy',
+          'excel',
+          'pdf'
+        ],
+        language: {
+          searchPlaceholder: 'Search...',
+          sSearch: '',
+          lengthMenu: '_MENU_ items/page',
+
+
+        }
+
+      });
+
+
+    });
+  </script>

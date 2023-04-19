@@ -1,90 +1,120 @@
-<div class="content ht-100v pd-0">
+<style>
+  button.dt-button {
+    border-radius: 2px;
+    color: #fff;
+    background: #8b8d91;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+
+
+
+
+  }
+
+  button.dt-button:hover:not(.disabled) {
+
+    border-radius: 2px;
+    color: #fff;
+    background: #dc3545;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+    outline: none;
+
+
+  }
+</style>
+  
+  
+  
+  
+  
+  <div class="content ht-100v pd-0">
     <div class="content-body">
-      <div class="container pd-x-0">
-        <div
-          class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10"
-        >
+      <div class="container pd-x-0 ">
+  
+         <!--breadCrumbs -->
+         <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
           <div>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                <li class="breadcrumb-item">
-                  <a href="../fe-flow.html">Dashboard</a>
-                </li>
-                <li class="breadcrumb-item" aria-current="page">Agents</li>
-                <li class="breadcrumb-item active" aria-current="page">
-                 Agent Card Order
-                </li>
-              </ol>
-            </nav>
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                      <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
+                      <li class="breadcrumb-item">Agents</li>
+                      <li class="breadcrumb-item active" aria-current="page">Agent Card Order
+                      </li>
+                  </ol>
+              </nav>
+          </div>
+      </div>
+        <!--breadCrumbs -->
+  
+  
+        <!--section container-->
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body form-control">
+              <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Agent Card Order List</p>
+  
+              <table id="example3" class="table rounded">
+                <thead style="background-color: rgba(244, 244, 244, 0.632);">
+                    <tr>
+                        <th class="wd-20p">Name</th>
+                        <th class="wd-25p">Position</th>
+                        <th class="wd-20p">Office</th>
+                        <th class="wd-15p">Age</th>
+                        <th class="wd-20p">Salary</th>
+  
+                    </tr>
+                </thead>
+            </table>
+  
+            </div>
           </div>
         </div>
+        <!--section container-->
   
-        <!-- Main Content -->
   
-        <div class="row row-xs">
-          <!-- Col Card Col ID -->
-          <div class="row row-xs">
-            
-            <div class="col-lg-12 col-xl-12 mg-t-10">
-              <div class="card mg-b-10">
-                <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">
-                    Agent Card Order List
-                </p>
-                <div class="table-responsive p-3">
-                  <table class="table table-dashboard mg-b-30">
-                    <thead>
-                        <tr>
-                            <th class="text-right">First Name</th>
-                            <th class="text-right">Last Name</th>
-                            <th class="text-right">Email Address</th>
-                            <th class="text-right">Phone Number</th>
-                            <th class="text-right">Date of Birthday</th>
-                            <th class="text-right">Nationality</th>
-                            <th class="text-right">Document Type</th>
-                            <th class="text-right">Document Number</th>
-                            <th class="text-right">Residential Address</th>
-                            <th class="text-right">Referral Code</th>
-                            <th class="text-right">Created At</th>
-                            <th class="text-right">Modified At</th>
-                        </tr>    
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="text-right tx-medium">ALEXIS</td>
-                        <td class="text-right tx-medium">MANEGABE NZIGI</td>
-                        <td class="text-right tx-medium">modechainstyle@gmail.com</td>
-                        <td class="text-right tx-medium">+243853507337</td>
-                        <td class="text-right tx-medium">1975-12-20T00:00:00</td>
-                        <td class="text-right tx-medium">Congolaise</td>
-                        <td class="text-right tx-medium">ID Card</td>
-                        <td class="text-right tx-medium">22149314780</td>
-                        <td class="text-right tx-medium">AV: Hypodrome n 010 C/Bukavu</td>
-                        <td class="text-right tx-medium">3943</td>
-                        <td class="text-right tx-medium">2022-05-06T17:25:58.597</td>
-                        <td class="text-right tx-medium">2022-05-06T17:29:37.733</td>
-                      </tr>
-                      <tr>
-                        <td class="text-right tx-medium">ALEXIS</td>
-                        <td class="text-right tx-medium">MANEGABE NZIGI</td>
-                        <td class="text-right tx-medium">modechainstyle@gmail.com</td>
-                        <td class="text-right tx-medium">+243853507337</td>
-                        <td class="text-right tx-medium">1975-12-20T00:00:00</td>
-                        <td class="text-right tx-medium">Congolaise</td>
-                        <td class="text-right tx-medium">ID Card</td>
-                        <td class="text-right tx-medium">22149314780</td>
-                        <td class="text-right tx-medium">AV: Hypodrome n 010 C/Bukavu</td>
-                        <td class="text-right tx-medium">3943</td>
-                        <td class="text-right tx-medium">2022-05-06T17:25:58.597</td>
-                        <td class="text-right tx-medium">2022-05-06T17:29:37.733</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div><!-- table-responsive -->
-              </div><!-- card -->
-            </div><!-- End Card Col ID -->
-          </div><!-- col -->
-        </div><!-- End Table -->
-      </div><!-- End Main Content -->
+  
+  
+      </div>
     </div>
   </div>
   
+  
+    <script src="../../assets/js/dashforge.js"></script>
+  
+  
+  
+    <script>
+      $(function () {
+        'use strict'
+  
+  
+        $('#example3').DataTable({
+          'ajax': '../assets/data/datatable-arrays.txt',
+          dom: 'Bfrtip',
+          buttons: [
+            'copy',
+            'excel',
+            'pdf'
+          ],
+          language: {
+            searchPlaceholder: 'Search...',
+            sSearch: '',
+            lengthMenu: '_MENU_ items/page',
+  
+  
+          }
+  
+        });
+  
+  
+      });
+    </script>
