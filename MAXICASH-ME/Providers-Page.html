@@ -1,124 +1,181 @@
-                <!-- full page content (main container) -->
-                <div class="content-body">
-                    <!-- secondary container-->
-                    <div class="container pd-x-0">
-                
-                        <!-- dashBoard/Fee structured (inside SC)-->
-                        <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
-                            <div>
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                                        <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
-                                        <li class="breadcrumb-item">Transaction</li>
-                                        <li class="breadcrumb-item active" aria-current="page">Pending Bank Payments</li>
-                                    </ol>
-                                </nav>
+<style>
+    button.dt-button {
+        border-radius: 2px;
+        color: #fff;
+        background: #8b8d91;
+        border-radius: 3px;
+        outline: none !important;
+        border-color: none;
+        border: none;
+        font-family: 'IBM Plex Sans';
+        width: 70px;
+
+
+
+
+    }
+
+    button.dt-button:hover:not(.disabled) {
+
+        border-radius: 2px;
+        color: #fff;
+        background: #dc3545;
+        border-radius: 3px;
+        outline: none !important;
+        border-color: none;
+        border: none;
+        font-family: 'IBM Plex Sans';
+        width: 70px;
+        outline: none;
+
+
+    }
+</style>
+
+
+
+
+
+<div class="content ht-100v pd-0">
+    <div class="content-body">
+        <div class="container pd-x-0 ">
+
+
+
+            <!--breadCrumbs -->
+            <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
+                <div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                            <li class="breadcrumb-item"><a href="../fe-flow.html">Dashboard</a></li>
+                            <li class="breadcrumb-item " aria-current="page">Maxicash Me</li>
+                            <li class="breadcrumb-item active " aria-current="page">Providers</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <!--breadCrumbs -->
+
+
+
+
+
+            <!--section container-->
+            <div class="row row-xs">
+                <div class="row row-xs">
+                    <div class="col-lg-12 col-xl-12 mg-t-10  ">
+                        <div class="card mg-b-10">
+                            <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Providers List</p>
+
+                            <div class="table-responsive p-3">
+                                <div>
+                                    <button href="#CreateProvider" data-bs-toggle="modal"
+                                        class="btn tx-center btn-sm btn-success active btn-uppercase pd-x-15 mg-b-10"><i
+                                            data-feather="plus"></i> Create Providers</button>
+                                </div>
+                                <table id="example3" class="table rounded mt-4">
+                                    <thead style="background-color: rgba(244, 244, 244, 0.632);">
+                                        <tr>
+                                            <th class="wd-20p">Name</th>
+                                            <th class="wd-25p">Position</th>
+                                            <th class="wd-20p">Office</th>
+                                            <th class="wd-15p">Age</th>
+                                            <th class="wd-20p">Salary</th>
+
+                                        </tr>
+                                    </thead>
+                                </table>
                             </div>
                         </div>
-                        <!--dashBoard/Fee structured-->
-                
-                        <div class="content ht-100v pd-0">
-                            <div class="col-lg-12 col-xl-8 mg-t-10" style="width: 100%;">
-                                <div class="card mg-b-10">
-                
-                                    <!--fieldset container-->
-                                    <fieldset class="form-fieldset">
-                
-                                        <!--fieldset legend-->
-                                        <legend>Exchange Rates</legend>
-                                        <!--fieldset legend-->
-                
-                                        <!-- button CSV(those will come from the datatable) -->
-                                        <div
-                                            class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 mg-b-5">
-                                            <div class="d-flex justify-content-start pl-4 mg-t-20">
-                                                <div class="flex-fill">
-                                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Print</button>
-                                                    <button type="button" class="btn btn-outline-secondary btn-xs ">Excel</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- button CSV(those will come from the datatable) -->
-                
-                                        <!--tableContainer-->
-                                        <div class="table-responsive">
-                                            <table class="table table-dashboard mg-b-0">
-                
-                                                <table class="table table-hover table-dashboard mg-b-0 ">
-                                                    <thead style="background-color: rgba(244, 244, 244, 0.632);">
-                                                        <tr>
-                                                            <th scope="col">Action</th>
-                                                            <th scope="col">Provider Name</th>
-                                                            <th scope="col">default Message</th>
-                                                            <th scope="col">Active</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <div class="btn-group-vertical" role="group"
-                                                                    aria-label="Basic example">
-                                                                    <button type="button"
-                                                                        class="btn btn-success btn-sm mt-2"><i
-                                                                            data-feather="check-circle"></i>Manage</button>
-                                                                </div>
-                                                            </th>
-                                                            <td>Thunes</td>
-                                                            <td>This service is currently unavailable, please try again
-                                                                later</td>
-                                                            <td>true</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <div class="btn-group-vertical" role="group"
-                                                                    aria-label="Basic example">
-                                                                    <button type="button"
-                                                                        class="btn btn-success btn-sm mt-2"><i
-                                                                            data-feather="check-circle"></i>Manage</button>
-                                                                </div>
-                                                            </th>
-                                                            <td>Maxicash</td>
-                                                            <td>This service is currently unavailable, please try again
-                                                                later</td>
-                                                            <td>true</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <div class="btn-group-vertical" role="group"
-                                                                    aria-label="Basic example">
-                                                                    <button type="button"
-                                                                        class="btn btn-success btn-sm mt-2"><i
-                                                                            data-feather="check-circle"></i>Manage</button>
-                                                                </div>
-                                                            </th>
-                                                            <td>EziPay</td>
-                                                            <td>This service is currently unavailable, please try again
-                                                                later</td>
-                                                            <td>true</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <div class="btn-group-vertical" role="group"
-                                                                    aria-label="Basic example">
-                                                                    <button type="button"
-                                                                        class="btn btn-success btn-sm mt-2"><i
-                                                                            data-feather="check-circle"></i>Manage</button>
-                                                                </div>
-                                                            </th>
-                                                            <td>Unipesa</td>
-                                                            <td>This service is currently unavailable, please try again
-                                                                later</td>
-                                                            <td>true</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                        </div><!--tableContainer-->
-                                        
-                                    </fieldset>
-                
+                    </div>
+                </div>
+            </div>
+            <!--section container-->
+
+
+
+
+            <!-- TopUp Create Provider -->
+            <div class="modal fade" id="CreateProvider" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered " role="document">
+                    <div class="modal-content">
+                        <div class="modal-body ">
+                            <a href="#" role="button" class="close pos-absolute t-15 r-15" data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </a>
+                            <p class="tx-center tx-uppercase  tx-color-03 tx-spacing-3">Message</p>
+                            <div class="card-body">
+                                <div class="rounded p-2">
+                                    <label class="mb-2 tx-color-03  "><strong>Provider Name</strong></label>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control  form-group-sm "
+                                            placeholder="Provider Name" aria-label="Card number">
+                                    </div>
+                                    <label class="mb-2 tx-color-03  "><strong>Default Message</strong></label>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control  form-group-sm "
+                                            placeholder="Default Message" aria-label="Card number">
+                                    </div>
+                                    <label for="enableDisableCountry">
+                                        <input id="enableDisableCountry" type="checkbox" required
+                                            name="enableDisableCountry" class="inline" />
+                                        Active</a>
+                                    </label>
+                                    <div
+                                        class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
+                                        <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15"><i
+                                                data-feather="x" class="mg-r-5"></i> Close</button>
+                                        <button
+                                            class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i
+                                                data-feather="save" class="mg-r-5"></i> Save</button>
+                                        <button
+                                            class="btn tx-center btn-sm btn-light btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i
+                                                data-feather="" class="mg-r-5"></i> Cancel</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                
-                    </div><!-- secondary container-->
-                </div><!-- full page content -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- TopUp create Provider-->
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../assets/js/dashforge.js"></script>
+
+
+
+<script>
+    $(function () {
+        'use strict'
+
+
+        $('#example3').DataTable({
+            'ajax': '../assets/data/datatable-arrays.txt',
+            dom: 'Bfrtip',
+            buttons: [
+                'copy',
+                'excel',
+                'pdf'
+            ],
+            language: {
+                searchPlaceholder: 'Search...',
+                sSearch: '',
+                lengthMenu: '_MENU_ items/page',
+
+
+            }
+
+        });
+
+
+    });
+</script>

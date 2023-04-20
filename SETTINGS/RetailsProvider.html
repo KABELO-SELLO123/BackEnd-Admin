@@ -1,21 +1,19 @@
 <style>
-    button.dt-button  {
-      border-radius: 2px;
-      color: #fff;
-      background:  #0168fa;
-      border-radius: 3px;
-      outline: none !important;
-      border-color: none;
-      border: none;
-      font-family: 'IBM Plex Sans';
-      width: 70px;
-  
-  
-    
-     
+  button.dt-button {
+    border-radius: 2px;
+    color: #fff;
+    background: #8b8d91;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+
   }
-  button.dt-button:hover:not(.disabled){
-  
+
+  button.dt-button:hover:not(.disabled) {
+
     border-radius: 2px;
     color: #fff;
     background: #dc3545;
@@ -26,10 +24,10 @@
     font-family: 'IBM Plex Sans';
     width: 70px;
     outline: none;
-    
-  
+
+
   }
-  </style>
+</style>
 
 
 <div class="content ht-100v pd-0">
@@ -54,34 +52,39 @@
 
 
 
+             <!--section container-->
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Retails Providers List</p>
+            <div class="table-responsive p-3">
+              <div class="mb-2">
+                <button href="#createRetail" data-bs-toggle="modal"
+                    class="btn  tx-l btn-sm btn-success btn-uppercase pd-x-15 "><i data-feather="check-circle"></i>Retail Provider Details</button>
+            </div>
+            <table id="example3" class="table rounded mt-4">
+              <thead style="background-color: rgba(244, 244, 244, 0.632);">
+                  <tr>
+                      <th class="wd-20p">Name</th>
+                      <th class="wd-25p">Position</th>
+                      <th class="wd-20p">Office</th>
+                      <th class="wd-15p">Age</th>
+                      <th class="wd-20p">Salary</th>
+                  </tr>
+              </thead>
+             </table>
 
-            <fieldset class="form-control">
-                <legend>Mobile Money List</legend>
-                <div class="mb-3">
-                    <button href="#createRetail" data-bs-toggle="modal"
-                        class="btn  tx-l btn-sm btn-success btn-uppercase pd-x-15 "><i data-feather="check-circle"></i>Retail Provider Details</button>
-                </div>
+            </div>
+          </div>
+        </div>
+        <!--section container-->
 
-                <div data-label="Example" class="df-example demo-table ">
-                    <table id="example3" class="table rounded mt-4">
-                    <thead style="background-color: rgba(244, 244, 244, 0.632);">
-                        <tr>
-                            <th class="wd-20p">Name</th>
-                            <th class="wd-25p">Position</th>
-                            <th class="wd-20p">Office</th>
-                            <th class="wd-15p">Age</th>
-                            <th class="wd-20p">Salary</th>
-                        </tr>
-                    </thead>
-                   </table>
-                </div>
 
-            </fieldset>
 
 
             
 
-        </div>
+    
 
 
 
@@ -101,7 +104,7 @@
           
                     <div class="row">
           
-                      <div class="col-6">
+                      <div>
           
                         <div class="rounded p-2">
           
@@ -147,11 +150,11 @@
                         Enable Retail Provider</a>
                       </label>
 
-                    <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
-                      <button class="btn tx-center btn-sm btn-primary pd-x-15"><i data-feather="save" class="mg-r-5"></i>
+                    <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-2 justify-content-end">
+                      <button class="btn tx-center btn-sm btn-primary pd-x-15 mg-r-5"><i data-feather="save" ></i>
                         Save</button>
           
-                      <button class="btn tx-center btn-sm btn-light pd-x-15"><i data-feather="save" class="mg-r-5"></i>
+                      <button class="btn tx-center btn-sm btn-light pd-x-15"><i data-feather="x"></i>
                         Close</button>
                     </div>
           

@@ -1,252 +1,167 @@
+<style>
+  button.dt-button {
+    border-radius: 2px;
+    color: #fff;
+    background: #8b8d91;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
 
 
-    <!-- Page holder -->
 
-    <div class="content ht-100v pd-0">
-     
 
-        <div class="content-body">
-          <div class="container pd-x-0 ">
-             <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
-              <div>
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                    <li class="breadcrumb-item"><a href="../fe-flow.html">Dashboard</a></li>
-                    <li class="breadcrumb-item " aria-current="page">Agents</li>
-                    <li class="breadcrumb-item active " aria-current="page">MaxiCashMe Transfer</li>
-                  </ol>
-                </nav>
+  }
+
+  button.dt-button:hover:not(.disabled) {
+
+    border-radius: 2px;
+    color: #fff;
+    background: #dc3545;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+    outline: none;
+
+
+  }
+</style>
+
+
+
+
+
+<div class="content ht-100v pd-0">
+  <div class="content-body">
+    <div class="container pd-x-0 ">
+
+      <!--breadCrumbs -->
+      <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
+        <div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+              <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
+              <li class="breadcrumb-item">Agents</li>
+              <li class="breadcrumb-item active" aria-current="page">MaxiCashMe Transfers
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!--breadCrumbs -->
+
+
+
+
+      <!--section container-->
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Agent MaxiCashMe Transfer</p>
+            <div class="card-body">
+              <div class="rounded p-2">
+          
+                  <div>
+                    <div>
+                      <label for="startDate"><strong>Date From</strong></label>
+                      <input type="date" class="form-control" id="startDate">
+                    </div>
+
+                    <div>
+                      <label for="endDate"><strong>Date To</strong></label>
+                      <input type="date" class="form-control" id="endDate">
+                    </div>
+                    <div>
+                      <label for="inputAddress"><strong>Display Name</strong></label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Type here...">
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 justify-content-end mt-2">
+                    <button class="btn tx-center btn-sm btn-danger active btn-uppercase pd-x-15"><i data-feather="x"
+                        class="mg-r-5"></i> Clear</button>
+                    <button
+                      class="btn tx-center btn-sm btn-primary active btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i
+                        data-feather="search" class="mg-r-5"></i> Search</button>
+
+                  </div>
+           
               </div>
             </div>
-  
-            <!-- Main Content -->
-  
-            <div class="row row-xs">
-  
-              <!-- Col Card Col ID -->
-              <div class="col-lg-12">
-                <div class="card">
-                  <div class="card-body">
-                    <p class="tx-uppercase tx-11">Agent MaxiCashMe Transfer</p>
-  
-                    <div  class="rounded p-2"> 
-                      <label class="mb-2 tx-color-03  ">Date From</label>
-                      <div class="d-md-flex col-md-4  col-lg-4 ">
-                        <input type="date" class="form-control  form-group-sm   "  placeholder="" aria-label="Card number">
-                      </div>
-                      <label class="mb-2 tx-color-03 mt-3  ">Date To</label>
-                      <div class="d-md-flex col-md-4  col-lg-4  ">
-                        <input type="date" class="form-control   " placeholder="" aria-label="Card number">
-                      </div>
-                      <label class="mb-2 tx-color-03 mt-3  ">Display Name</label>
-                      <div class="d-md-flex  col-md-4  col-lg-4 ">
-                        <input type="text" class="form-control  form-group-sm "  placeholder="" aria-label="Card number">
-                      </div>
-  
-                      
-                      
-                     
-              
-                      
-                      <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
-                        <button class="btn tx-center btn-sm btn-danger btn-uppercase pd-x-15"><i data-feather="x" class="mg-r-5"></i> Clear</button>
-                        <button class="btn tx-center btn-sm btn-primary btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i data-feather="search" class="mg-r-5"></i> Search</button>
-                        
-                      </div>
-                      </div>
-                   
-                    
-                      
-                      
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-              <!-- End Card Col ID -->
-  
-              <div class="col-lg-12 col-xl-12 mg-t-10  ">
-                
-                <div class="card mg-b-10 ">
-
-  
-                  <!-- Files -->
-                  <div class="row row-xs">
-  
-                    <div class="col-lg-12">
-  
-                        <div class="card">
-  
-                            <div class="card-body">
-                                
-                                
-                                <div class="d-md-flex   justify-content-between tx-center ">
-                                     <div class="   mg-b-20 mg-lg-b-25 mg-xl-b-30">
-                                        <div class=" d-md-block ">
-                                            <button class="btn tx-center btn-sm pd-x-15 btn-danger btn-uppercase"><i data-feather="copy" class="wd-10 mg-r-5"></i> Copy</button>
-                                            <button class="btn tx-center btn-sm pd-x-15 btn-danger btn-uppercase mg-l-5"><i data-feather="file" class="wd-10 mg-r-5"></i> Excel</button>
-                                            <button class="btn tx-center btn-sm pd-x-15 btn-danger btn-uppercase mg-l-5"><i data-feather="download" class="wd-10 mg-r-5"></i> PDF</button>
-                                            
-                                          
-                                        </div>
-                           
-                                    </div>
-                                    
-                                <div class="d-flex tx-center justify-content-center  mg-b-20 mg-lg-b-25 mg-xl-b-30">
-                                  <label class=" tx-color-03 tx-center  mt-2 me-2">Filter Records</label>
-                                  <div class="d-flex">
-                                    
-                                    <input type="text" class="form-control  " placeholder="" aria-label="Filter Records">
-                                  </div>
-                                  
-                                
-                                </div>
-                                    
-                                </div>
-  
-  
-                            </div>
-  
-                        </div>
-  
-                    </div>
-  
-                    
-                  </div>
-  
-  
-                  <!-- End Files -->
-                  <div class="table-responsive p-3">
-                    
-                  
-                    <table class="table table-dashboard mg-b-30 ">
-                      <thead>
-                        <tr >
-                          
-                          <th class="text-right">Transaction Type</th>
-                          <th class="text-right">Transaction Method</th>
-                          <th class="text-right">Date and Time</th>
-                          <th class="text-right">Amount</th>
-                          <th class="text-right">Fee</th>
-                          <th class="text-right">Total Cost</th>
-                          <th class="text-right">Currency</th>
-                          <th class="text-right">Display Name</th>
-                          <th class="text-right">Recipient Number</th>
-                          <th class="text-right">Recipient Name</th>
-                          <th class="text-right">Country</th>
-                          <th class="text-right">Amount in Rand</th>
-                          <th class="text-right">Fee in Rand</th>
-                          <th class="text-right">Total Cost in Rand</th>
-                          <th class="text-right">Exchange Rate</th>
-                          
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr >
-  
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          <td class="text-right text-capitalize tx-medium"></td>
-                          
- 
-                         
-                        </tr>
-                        
-                        
-                      </tbody>
-                    </table>
-  
-                   
-  
-                    
-                    
-                  </div><!-- table-responsive -->
-  
-  
-                  <!-- Pagination -->
-  
-                  <div class="row row-xs">
-  
-                      <div class="col-lg-12 ">
-  
-                          <div class="card">
-                      
-                              <div class="card-body">
-  
-                                <div class="tx-center">
-                                  <p class="tx-color-03" >*<span>Showing 1 to 10 of 9,488 entries</span>*</p>
-                              </div>
-                              
-                              <div class="mt-2 ">
-                                  <nav aria-label="Page navigation ">
-                                      <ul class="pagination pagination-circle pagination-sm justify-content-center ">
-                                        <li class="page-item disabled " ><a class="page-link page-link-icon" href="#"><i data-feather="chevron-left"></i></a></li>
-                                        <li class="page-item active  "><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item "><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link page-link-icon" href="#"><i data-feather="chevron-right"></i></a></li>
-                                      </ul>
-                                    </nav>
-                              </div>
-  
-                              
-  
-                              </div>
-  
-                          </div>
-  
-                      </div>
-  
-                      
-                    </div>
-  
-  
-                  <!-- End Pagination -->
-  
-               
-                 
-                      
-                    
-                </div><!-- card -->
-  
-                
-              </div><!-- col -->
-  
-  
-  
-            <!-- End Main Content -->
-    
           </div>
-  
-          
-    
-    
         </div>
-  
-       
-  
-        
-  
-  
-        <!-- End Path -->
-  
-  
-  
-  
-  
-  
-        <!--End  content-header -->
-  
-  
-     
+      </div>
+      <!--section container-->
+
+
+      <!--section container-->
+      <div class="col-lg-12 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="table-responsive p-3">
+              <table id="example3" class="table rounded mt-4">
+                <thead style="background-color: rgba(244, 244, 244, 0.632);">
+                  <tr>
+                    <th class="wd-20p">Name</th>
+                    <th class="wd-25p">Position</th>
+                    <th class="wd-20p">Office</th>
+                    <th class="wd-15p">Age</th>
+                    <th class="wd-20p">Salary</th>
+
+                  </tr>
+                </thead>
+              </table>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <!--section container-->
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<script src="../../assets/js/dashforge.js"></script>
+
+
+
+<script>
+  $(function () {
+    'use strict'
+
+
+    $('#example3').DataTable({
+      'ajax': '../assets/data/datatable-arrays.txt',
+      dom: 'Bfrtip',
+      buttons: [
+        'copy',
+        'excel',
+        'pdf'
+      ],
+      language: {
+        searchPlaceholder: 'Search...',
+        sSearch: '',
+        lengthMenu: '_MENU_ items/page',
+
+
+      }
+
+    });
+
+
+  });
+</script>
