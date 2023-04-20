@@ -44,6 +44,7 @@
       <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
         <div>
           <nav aria-label="breadcrumb">
+<<<<<<< HEAD
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
               <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
               <li class="breadcrumb-item">Agents</li>
@@ -57,10 +58,26 @@
 
 
 
+=======
+              <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                  <li class="breadcrumb-item"><a href="../dashboard-one.html">Dashboard</a></li>
+                  <li class="breadcrumb-item">Agents</li>
+                  <li class="breadcrumb-item active" aria-current="page">MaxiCashMe Transfers
+                  </li>
+              </ol>
+          </nav>
+      </div>
+    </div>
+      <!--breadCrumbs -->
+
+
+           
+>>>>>>> 047cc1a47671e1ece349cc0fc077da5ce15cbb1d
 
       <!--section container-->
       <div class="col-lg-12">
         <div class="card">
+<<<<<<< HEAD
           <div class="card-body">
             <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Agent MaxiCashMe Transfer</p>
             <div class="card-body">
@@ -92,12 +109,42 @@
            
               </div>
             </div>
+=======
+          <div class="card-body form-control">
+            <p class="tx-center tx-uppercase tx-12 tx-12 mt-3">Agent MaxiCashMe Transfer</p>
+            <form class="form-control">
+              <div>
+                  <div class="form-group">
+                      <label for="startDate"><strong>Date From</strong></label>
+                      <input type="date" class="form-control" id="startDate">
+                  </div>
+
+                  <div>
+                      <label for="endDate"><strong>Date To</strong></label>
+                      <input type="date" class="form-control" id="endDate">
+                  </div>
+                  <div>
+                    <label for="inputAddress"><strong>Display Name</strong></label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Type here...">
+                  </div>
+              </div>
+              <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 justify-content-end mt-2">
+                <button class="btn tx-center btn-sm btn-danger active btn-uppercase pd-x-15"><i data-feather="x"
+                    class="mg-r-5"></i> Clear</button>
+                <button class="btn tx-center btn-sm btn-primary active btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i
+                    data-feather="search" class="mg-r-5"></i> Search</button>
+
+              </div>
+          </form>
+
+>>>>>>> 047cc1a47671e1ece349cc0fc077da5ce15cbb1d
           </div>
         </div>
       </div>
       <!--section container-->
 
 
+<<<<<<< HEAD
       <!--section container-->
       <div class="col-lg-12 mt-2">
         <div class="card">
@@ -128,6 +175,38 @@
 
 
 
+=======
+       <!--section container-->
+       <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body form-control">
+
+              <table id="example3" class="table rounded mt-4">
+                <thead style="background-color: rgba(244, 244, 244, 0.632);">
+                    <tr>
+                        <th class="wd-20p">Name</th>
+                        <th class="wd-25p">Position</th>
+                        <th class="wd-20p">Office</th>
+                        <th class="wd-15p">Age</th>
+                        <th class="wd-20p">Salary</th>
+
+                    </tr>
+                </thead>
+            </table>
+
+        
+
+
+            </div>
+          </div>
+        </div>
+      
+        <!--section container-->
+
+
+
+       
+>>>>>>> 047cc1a47671e1ece349cc0fc077da5ce15cbb1d
 
 
     </div>
@@ -135,6 +214,7 @@
 </div>
 
 
+<<<<<<< HEAD
 <script src="../../assets/js/dashforge.js"></script>
 
 
@@ -165,3 +245,35 @@
 
   });
 </script>
+=======
+  <script src="../../assets/js/dashforge.js"></script>
+
+
+
+  <script>
+    $(function () {
+      'use strict'
+
+
+      $('#example3').DataTable({
+        'ajax': '../assets/data/datatable-arrays.txt',
+        dom: 'Bfrtip',
+        buttons: [
+          'copy',
+          'excel',
+          'pdf'
+        ],
+        language: {
+          searchPlaceholder: 'Search...',
+          sSearch: '',
+          lengthMenu: '_MENU_ items/page',
+
+
+        }
+
+      });
+
+
+    });
+  </script>
+>>>>>>> 047cc1a47671e1ece349cc0fc077da5ce15cbb1d

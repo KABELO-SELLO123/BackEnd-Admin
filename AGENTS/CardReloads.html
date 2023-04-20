@@ -10,6 +10,171 @@
     font-family: 'IBM Plex Sans';
     width: 70px;
 
+<style>
+  button.dt-button {
+    border-radius: 2px;
+    color: #fff;
+    background: #8b8d91;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+
+
+
+
+  }
+
+  button.dt-button:hover:not(.disabled) {
+
+    border-radius: 2px;
+    color: #fff;
+    background: #dc3545;
+    border-radius: 3px;
+    outline: none !important;
+    border-color: none;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    width: 70px;
+    outline: none;
+
+
+  }
+</style>
+
+
+
+
+
+<div class="content ht-100v pd-0">
+  <div class="content-body">
+    <div class="container pd-x-0 ">
+
+      <!--breadCrumbs -->
+      <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-10">
+        <div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+              <li class="breadcrumb-item"><a href="../fe-flow.html">Dashboard</a></li>
+              <li class="breadcrumb-item " aria-current="page">Agents</li>
+              <li class="breadcrumb-item active " aria-current="page">Card Reloads</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!--breadCrumbs -->
+
+
+           
+
+      <!--section container-->
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body form-control">
+            Agent Card Reloads
+            <form class="form-control">
+              <div>
+                  <div class="form-group">
+                      <label for="startDate"><strong>Date From</strong></label>
+                      <input type="date" class="form-control" id="startDate">
+                  </div>
+
+                  <div>
+                      <label for="endDate"><strong>Date To</strong></label>
+                      <input type="date" class="form-control" id="endDate">
+                  </div>
+                  <div>
+                    <label for="inputAddress"><strong>Display Name</strong></label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Type here...">
+                  </div>
+              </div>
+              <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0 mt-3 justify-content-end">
+                <button class="btn tx-center btn-sm btn-danger active btn-uppercase mg-r-5"><i data-feather="x"
+                    ></i> Clear</button>
+                <button class="btn tx-center btn-sm btn-primary active btn-uppercase "><i
+                    data-feather="search" class="mg-r-5"></i> Search</button>
+
+              </div>
+          </form>
+
+          </div>
+        </div>
+      </div>
+      <!--section container-->
+
+
+       <!--section container-->
+       <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body form-control">
+
+         
+            
+              <table id="example3" class="table rounded mt-4">
+                <thead style="background-color: rgba(244, 244, 244, 0.632);">
+                    <tr>
+                        <th class="wd-20p">Name</th>
+                        <th class="wd-25p">Position</th>
+                        <th class="wd-20p">Office</th>
+                        <th class="wd-15p">Age</th>
+                        <th class="wd-20p">Salary</th>
+
+                    </tr>
+                </thead>
+            </table>
+
+        
+
+
+            </div>
+          </div>
+        </div>
+      
+        <!--section container-->
+
+
+
+       
+
+
+    </div>
+  </div>
+</div>
+
+
+  <script src="../../assets/js/dashforge.js"></script>
+
+
+
+  <script>
+    $(function () {
+      'use strict'
+
+
+      $('#example3').DataTable({
+        'ajax': '../assets/data/datatable-arrays.txt',
+        dom: 'Bfrtip',
+        buttons: [
+          'copy',
+          'excel',
+          'pdf'
+        ],
+        language: {
+          searchPlaceholder: 'Search...',
+          sSearch: '',
+          lengthMenu: '_MENU_ items/page',
+
+
+        }
+
+      });
+
+
+    });
+  </script>
+
 
 
 
